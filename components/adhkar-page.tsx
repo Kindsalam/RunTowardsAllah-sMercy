@@ -3,8 +3,7 @@ import Link from "next/link";
 import { BackToTopButton } from "@/components/back-to-top-button";
 import { ExpandableDuaGroup } from "@/components/expandable-dua-group";
 import { StickySectionIndex } from "@/components/sticky-section-index";
-import { eveningAdhkar } from "@/data/evening-adhkar";
-import { morningAdhkar } from "@/data/morning-adhkar";
+import { publicEveningAdhkar, publicMorningAdhkar } from "@/lib/public-content";
 import type { DuaItem } from "@/lib/types";
 
 const morningBenefits = [
@@ -28,34 +27,33 @@ function pickItems(items: DuaItem[], ids: string[]) {
 }
 
 export function AdhkarPage() {
-  const morningOpening = pickItems(morningAdhkar, [
+  const morningOpening = pickItems(publicMorningAdhkar, [
     "morning-ahmad-15360",
     "morning-tirmidhi-abu-dawud",
     "morning-abu-dawud-5072",
   ]);
-  const morningProtection = pickItems(morningAdhkar, [
+  const morningProtection = pickItems(publicMorningAdhkar, [
     "morning-tirmidhi-3388",
     "morning-abu-dawud-5074",
     "morning-muslim-2723",
   ]);
-  const morningPraise = pickItems(morningAdhkar, [
+  const morningPraise = pickItems(publicMorningAdhkar, [
     "morning-bukhari-3293-muslim-2691",
     "morning-bukhari-6405",
     "morning-muslim-2726a",
     "morning-bukhari-6306",
   ]);
 
-  const eveningOpening = pickItems(eveningAdhkar, [
+  const eveningOpening = pickItems(publicEveningAdhkar, [
     "evening-ahmad-15360",
     "evening-tirmidhi-3391",
-    "evening-abu-dawud-5073",
   ]);
-  const eveningProtection = pickItems(eveningAdhkar, [
+  const eveningProtection = pickItems(publicEveningAdhkar, [
     "evening-tirmidhi-3388",
     "evening-abu-dawud-5074",
     "evening-muslim-2723",
   ]);
-  const eveningClosing = pickItems(eveningAdhkar, [
+  const eveningClosing = pickItems(publicEveningAdhkar, [
     "evening-bukhari-6306",
     "evening-bukhari-4008",
   ]);
@@ -79,9 +77,9 @@ export function AdhkarPage() {
               Morning and evening adhkar
             </h1>
             <p className="reading-copy max-w-2xl text-[var(--muted)]">
-              Read authentic daily adhkar in Arabic with full harakat, with
-              English and Urdu translation, in one calm mobile-friendly space
-              for morning and evening remembrance.
+              Read morning and evening adhkar in Arabic with full harakat, with
+              English and Urdu translation and clear source references, in one
+              calm mobile-friendly space for daily remembrance.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link href="#morning-adhkar-section" className="button-primary">

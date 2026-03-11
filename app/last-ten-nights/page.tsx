@@ -1,8 +1,16 @@
+import { createMetadata } from "@/lib/seo";
 import Link from "next/link";
 
 import { CopyDuaButton } from "@/components/copy-dua-button";
 import { DuaCard } from "@/components/dua-card";
-import { lastTenNights } from "@/data/last-ten-nights";
+import { publicLastTenNights } from "@/lib/public-content";
+
+export const metadata = createMetadata({
+  title: "Last 10 Nights and Laylatul Qadr",
+  description:
+    "Keep a reviewed set of duas and reminders close in the last ten nights of Ramadan and while seeking Laylatul Qadr.",
+  path: "/last-ten-nights",
+});
 
 const laylatulQadrFocus = [
   {
@@ -11,7 +19,7 @@ const laylatulQadrFocus = [
   },
   {
     title: "Increase dua",
-    text: "Repeat the most important authentic duas often and with presence of heart.",
+    text: "Repeat the most important reviewed duas often and with presence of heart.",
   },
   {
     title: "Stay with Qur’an and dhikr",
@@ -27,8 +35,8 @@ const worshipPriorities = [
 
 export default function LastTenNightsPage() {
   const featuredDua =
-    lastTenNights.find((item) => item.featured) ?? lastTenNights[0];
-  const recommendedReadings = lastTenNights.filter(
+    publicLastTenNights.find((item) => item.featured) ?? publicLastTenNights[0];
+  const recommendedReadings = publicLastTenNights.filter(
     (item) => item.id !== featuredDua.id,
   );
   const featuredCopyText = [
@@ -128,9 +136,9 @@ export default function LastTenNightsPage() {
             Words to keep close in these nights
           </h2>
           <p className="reading-copy text-[var(--muted)]">
-            Use this section for a small set of high-priority sample duas and
-            adhkar relevant to the last 10 nights. Keep the structure ready for
-            verified content population later.
+            Keep this small reviewed set of duas and reminders close in the
+            last ten nights. Each item is shown with its reference so the page
+            stays useful without becoming noisy.
           </p>
         </div>
 
@@ -169,7 +177,7 @@ export default function LastTenNightsPage() {
               Do not leave these nights empty
             </h2>
             <p className="reading-copy max-w-2xl text-[var(--muted)]">
-              Stay with authentic words, keep your tongue busy, and ask Allah
+              Stay with reviewed words, keep your tongue busy, and ask Allah
               for forgiveness, mercy, and the best of this world and the next.
             </p>
           </div>
@@ -178,7 +186,7 @@ export default function LastTenNightsPage() {
               text={featuredCopyText}
               label="Copy the Laylatul Qadr dua"
             />
-            <Link href="/evening-adhkar" className="button-secondary">
+            <Link href="/adhkar#evening-adhkar-section" className="button-secondary">
               Open Evening Adhkar
             </Link>
           </div>

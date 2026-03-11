@@ -1,6 +1,14 @@
 import Link from "next/link";
 
 import { sourceReferences } from "@/lib/content";
+import { createMetadata } from "@/lib/seo";
+
+export const metadata = createMetadata({
+  title: "Sources",
+  description:
+    "Review the source method used across the site, including Qur'an and hadith references, language support, and publication standards.",
+  path: "/sources",
+});
 
 const contentCategoryCards = [
   {
@@ -8,8 +16,8 @@ const contentCategoryCards = [
     text: "The Rabbana duas come from the Qur’an and should always display the surah and ayah reference clearly.",
   },
   {
-    title: "Authentic hadith-based adhkar",
-    text: "Morning Adhkar, Evening Adhkar, and some last 10 nights duas come from authentic hadith sources. Their references should remain visible for review.",
+    title: "Reviewed hadith-based adhkar",
+    text: "Morning Adhkar, Evening Adhkar, and some last 10 nights duas come from reviewed hadith sources. Their references remain visible for checking and context.",
   },
   {
     title: "Structured for careful review",
@@ -47,16 +55,16 @@ const contentMapItems = [
   },
   {
     title: "Morning Adhkar",
-    text: "Authentic morning remembrance for protection, gratitude, and steadiness at the start of the day.",
+    text: "Morning remembrance for protection, gratitude, and steadiness at the start of the day.",
   },
   {
     title: "Evening Adhkar",
-    text: "Authentic evening remembrance for reflection, protection, and peace before the night.",
+    text: "Evening remembrance for reflection, protection, and peace before the night.",
   },
 ];
 
 const trustPrinciples = [
-  "Keep the words authentic",
+  "Keep the words reviewed before publishing",
   "Keep the source visible",
   "Keep the design simple and readable",
   "Keep translations clear and respectful",
@@ -75,10 +83,10 @@ export default function SourcesPage() {
               Sources you can trust
             </h1>
             <p className="reading-copy max-w-2xl text-[var(--muted)]">
-              This website is built to make authentic duas and adhkar easier to
+              This website is built to make reviewed duas and adhkar easier to
               read on a phone, with Arabic, English, and Urdu together in one
-              place. It aims to stay close to the Qur’an and authentic Sunnah,
-              while keeping source references visible and easy to review.
+              place. Source references stay visible so the public reading set
+              remains easy to review.
             </p>
           </div>
 
@@ -173,11 +181,11 @@ export default function SourcesPage() {
             A note on verification
           </h2>
           <p className="reading-copy text-[var(--muted)]">
-            This website may begin with a smaller set of reviewed entries and
-            then grow over time. Sample entries may be used during
-            development, but sacred text should always be checked carefully
-            before public release or wide sharing. Arabic wording, harakat,
-            translations, and references should all be reviewed with care.
+            This website begins with a smaller set of reviewed entries and can
+            grow over time. Draft entries may be used during development, but
+            they should stay out of the public reading set until Arabic
+            wording, harakat, translations, and references are all checked
+            with care.
           </p>
           <p className="reading-copy font-medium text-[var(--foreground)]">
             Ease of reading should never come at the cost of accuracy.

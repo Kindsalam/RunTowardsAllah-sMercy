@@ -3,61 +3,29 @@
 import Link from "next/link";
 import { useState } from "react";
 
-import { lastTenNights } from "@/data/last-ten-nights";
-import { rabbanaDuas } from "@/data/rabbana-duas";
 import { buildSourceLinks } from "@/lib/source-links";
-
-const morningHeroDua = {
-  id: "hero-tirmidhi-3524",
-  title: "Ya Hayyu Ya Qayyum",
-  arabic: "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ",
-  english: "O Ever-Living, O Sustainer, in Your mercy I seek relief.",
-  sourceReference: "Jami` at-Tirmidhi 3524",
+type HeroFeature = {
+  key: "rabbana" | "morning" | "laylatul-qadr" | "reminder";
+  label: string;
+  href: string;
+  item: {
+    id: string;
+    title: string;
+    arabic: string;
+    english: string;
+    sourceReference: string;
+  };
 };
 
-const reminderHeroAyah = {
-  id: "hero-ash-sharh-94-6",
-  title: "A reminder for the heart",
-  arabic: "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا",
-  english: "Surely with hardship comes ease.",
-  sourceReference: "Surah Ash-Sharh 94:6",
+type HeroSectionProps = {
+  featuredItems: HeroFeature[];
 };
 
-const featuredHeroDuas = [
-  {
-    key: "rabbana",
-    label: "Rabbana",
-    item: rabbanaDuas.find((dua) => dua.id === "rabbana-2-201") ?? rabbanaDuas[0],
-    href: "/rabbana-duas#rabbana-2-201",
-  },
-  {
-    key: "morning",
-    label: "Morning",
-    item: morningHeroDua,
-    href: "/morning-adhkar",
-  },
-  {
-    key: "laylatul-qadr",
-    label: "Laylatul Qadr",
-    item:
-      lastTenNights.find((dua) => dua.id === "laylatul-qadr-dua") ??
-      lastTenNights[0],
-    href: "/last-ten-nights#laylatul-qadr-dua",
-  },
-  {
-    key: "reminder",
-    label: "Reminder",
-    item: reminderHeroAyah,
-    href: "https://quran.com/94/6",
-  },
-] as const;
-
-export function HeroSection() {
-  const [activeKey, setActiveKey] = useState<(typeof featuredHeroDuas)[number]["key"]>(
-    "laylatul-qadr",
-  );
+export function HeroSection({ featuredItems }: HeroSectionProps) {
+  const [activeKey, setActiveKey] =
+    useState<(typeof featuredItems)[number]["key"]>("laylatul-qadr");
   const activeDua =
-    featuredHeroDuas.find((entry) => entry.key === activeKey) ?? featuredHeroDuas[0];
+    featuredItems.find((entry) => entry.key === activeKey) ?? featuredItems[0];
   const primarySource = buildSourceLinks(activeDua.item.sourceReference).find(
     (link) => link.href,
   );
@@ -85,13 +53,14 @@ export function HeroSection() {
       <div className="relative grid gap-8 lg:grid-cols-[minmax(0,28rem)_minmax(0,1fr)] lg:items-center lg:gap-10">
         <div className="max-w-[27rem] space-y-6">
           <div className="inline-flex rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-white/80 backdrop-blur">
-            Authentic Duas and Adhkar
+            Reviewed Duas and Adhkar
           </div>
           <h1 className="font-display text-4xl leading-[0.96] sm:text-5xl lg:text-[3.7rem]">
-            Remember Allah with authentic duas and adhkar
+            Remember Allah with Qur&apos;anic duas and daily adhkar
           </h1>
           <p className="reading-copy max-w-md text-white/82">
-            Read Qur’anic duas and authentic adhkar in Arabic, English, and Urdu.
+            Read Qur&apos;anic duas and a reviewed set of hadith-based adhkar in
+            Arabic, English, and Urdu.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link href="/last-ten-nights" className="button-light sm:min-w-[10.5rem]">
@@ -105,7 +74,7 @@ export function HeroSection() {
             </Link>
           </div>
           <p className="reading-copy-compact text-white/74">
-            Qur’an and authentic Sunnah only.
+            A carefully reviewed starting collection, expanding over time.
           </p>
         </div>
 
@@ -143,7 +112,7 @@ export function HeroSection() {
                     <Link
                       href={primarySource.href}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="text-sm text-white/76 underline decoration-white/30 underline-offset-4 transition hover:text-white"
                     >
                       {primarySource.label}
@@ -158,7 +127,7 @@ export function HeroSection() {
             </div>
 
             <div className="mt-4 flex flex-wrap gap-2">
-              {featuredHeroDuas.map((entry) => {
+              {featuredItems.map((entry) => {
                 const active = entry.key === activeKey;
 
                 return (

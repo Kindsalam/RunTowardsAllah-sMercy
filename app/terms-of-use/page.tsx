@@ -1,4 +1,12 @@
+import { createMetadata } from "@/lib/seo";
 import { LegalPageShell } from "@/components/legal-page-shell";
+
+export const metadata = createMetadata({
+  title: "Terms of Use",
+  description:
+    "Read the terms for using Mercy of Allah responsibly, especially around verification and sharing of religious content.",
+  path: "/terms-of-use",
+});
 
 const sections = [
   {

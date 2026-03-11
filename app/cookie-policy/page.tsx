@@ -1,4 +1,12 @@
+import { createMetadata } from "@/lib/seo";
 import { LegalPageShell } from "@/components/legal-page-shell";
+
+export const metadata = createMetadata({
+  title: "Cookie Policy",
+  description:
+    "Read the site's approach to local storage, lightweight functionality, and any future analytics changes.",
+  path: "/cookie-policy",
+});
 
 const sections = [
   {

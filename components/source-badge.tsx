@@ -40,7 +40,7 @@ export function SourceBadge({
             key={link.label}
             href={link.href}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="text-sm text-[var(--muted)] underline decoration-[var(--border-strong)] underline-offset-4 transition hover:text-[var(--foreground)]"
           >
             {link.label}

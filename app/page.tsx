@@ -4,12 +4,66 @@ import { CategoryCard } from "@/components/category-card";
 import { DuaCard } from "@/components/dua-card";
 import { HeroSection } from "@/components/hero-section";
 import { ReflectionSection } from "@/components/reflection-section";
-import { lastTenNights } from "@/data/last-ten-nights";
 import { journeyLinks, whyTheseNightsCards } from "@/lib/content";
+import { publicLastTenNights, publicRabbanaDuas } from "@/lib/public-content";
+import { createMetadata } from "@/lib/seo";
+
+export const metadata = createMetadata({
+  title: "Qur'anic Duas and Adhkar",
+  description:
+    "Read reviewed Qur'anic duas, daily adhkar, and last-ten-nights reminders in Arabic, English, and Urdu with clear source references.",
+  path: "/",
+});
+
+const morningHeroDua = {
+  id: "hero-tirmidhi-3524",
+  title: "Ya Hayyu Ya Qayyum",
+  arabic: "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ",
+  english: "O Ever-Living, O Sustainer, in Your mercy I seek relief.",
+  sourceReference: "Jami` at-Tirmidhi 3524",
+};
+
+const reminderHeroAyah = {
+  id: "hero-ash-sharh-94-6",
+  title: "A reminder for the heart",
+  arabic: "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا",
+  english: "Surely with hardship comes ease.",
+  sourceReference: "Surah Ash-Sharh 94:6",
+};
 
 export default function HomePage() {
   const featuredDua =
-    lastTenNights.find((item) => item.featured) ?? lastTenNights[0];
+    publicLastTenNights.find((item) => item.featured) ?? publicLastTenNights[0];
+  const featuredHeroItems = [
+    {
+      key: "rabbana" as const,
+      label: "Rabbana",
+      item:
+        publicRabbanaDuas.find((dua) => dua.id === "rabbana-2-201") ??
+        publicRabbanaDuas[0],
+      href: "/rabbana-duas#rabbana-2-201",
+    },
+    {
+      key: "morning" as const,
+      label: "Morning",
+      item: morningHeroDua,
+      href: "/adhkar#morning-adhkar-section",
+    },
+    {
+      key: "laylatul-qadr" as const,
+      label: "Laylatul Qadr",
+      item:
+        publicLastTenNights.find((dua) => dua.id === "laylatul-qadr-dua") ??
+        publicLastTenNights[0],
+      href: "/last-ten-nights#laylatul-qadr-dua",
+    },
+    {
+      key: "reminder" as const,
+      label: "Reminder",
+      item: reminderHeroAyah,
+      href: "https://quran.com/94/6",
+    },
+  ];
   const dunyaBenefits = [
     "Peace in the heart",
     "Clarity in hard times",
@@ -28,15 +82,15 @@ export default function HomePage() {
   ];
   const authenticityPoints = [
     "Qur’anic duas with surah and ayah reference",
-    "Authentic hadith-based adhkar only",
+    "Hadith-based adhkar with visible references",
     "Arabic with full harakat",
     "English and Urdu translation",
-    "Made for mobile reading",
+    "A reviewed reading set that grows carefully over time",
   ];
 
   return (
     <div className="page-shell space-y-16 py-6 pb-16 sm:space-y-20 sm:py-8">
-      <HeroSection />
+      <HeroSection featuredItems={featuredHeroItems} />
 
       <section className="reading-copy -mt-8 rounded-[24px] border border-[var(--border-soft)] bg-[color-mix(in_srgb,var(--surface-tint)_78%,transparent)] px-5 py-3 text-center text-[var(--muted)] sm:px-6">
         <span>
@@ -178,12 +232,12 @@ export default function HomePage() {
               Clear, trusted, and easy to read
             </h2>
             <p className="reading-copy text-[var(--muted)]">
-              This website focuses on Qur’anic Rabbana duas and authentic
-              adhkar from reliable hadith sources. Arabic is shown with full
-              harakat to help non-Arab readers. English and Urdu translations
-              are included for understanding. References are shown clearly so
-              you know what comes from the Qur’an and what comes from authentic
-              hadith.
+              This website currently focuses on a carefully reviewed starting
+              set of Qur’anic Rabbana duas and hadith-based adhkar. Arabic is
+              shown with full harakat to help non-Arab readers. English and
+              Urdu translations are included for understanding, and references
+              stay visible so you can see what comes from the Qur’an and what
+              comes from hadith.
             </p>
           </div>
           <div className="grid gap-3">
@@ -209,8 +263,8 @@ export default function HomePage() {
             <p className="reading-copy max-w-2xl text-[var(--muted)]">
               Return often with a few sincere minutes of dua, dhikr, and
               reflection. In Ramadan especially, keep your tongue busy with
-              what is authentic and ask Allah for the best of this world and
-              the next.
+              clearly referenced words and ask Allah for the best of this
+              world and the next.
             </p>
             <p className="reading-copy text-[var(--muted)]">
               A few honest moments of remembrance may carry great weight.

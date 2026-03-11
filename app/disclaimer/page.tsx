@@ -1,4 +1,12 @@
+import { createMetadata } from "@/lib/seo";
 import { LegalPageShell } from "@/components/legal-page-shell";
+
+export const metadata = createMetadata({
+  title: "Disclaimer",
+  description:
+    "Read the review and verification disclaimer for Mercy of Allah, including how to report corrections.",
+  path: "/disclaimer",
+});
 
 const sections = [
   {

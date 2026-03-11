@@ -2,6 +2,14 @@ import Link from "next/link";
 
 import { CorrectionNote } from "@/components/correction-note";
 import { PageHero } from "@/components/page-hero";
+import { createMetadata } from "@/lib/seo";
+
+export const metadata = createMetadata({
+  title: "About",
+  description:
+    "Learn about the Sadaqah Jariyah intention behind Mercy of Allah and how the website is being reviewed and improved over time.",
+  path: "/about",
+});
 
 const technologyPoints = [
   "Prompt engineered by Salam Khan",
@@ -22,7 +30,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About this project"
         title="A long-term Sadaqah Jariah project"
-        description="This website exists to help people remember Allah, read authentic duas and adhkar, reflect on the guidance of the Qur’an and Sunnah, and keep benefiting from beneficial knowledge over time."
+        description="This website exists to help people remember Allah, read reviewed Qur’anic duas and hadith-based adhkar, reflect on the guidance of the Qur’an and Sunnah, and keep benefiting from beneficial knowledge over time."
         aside={
           <div className="reading-copy border-l-2 border-[var(--border-soft)] pl-5 text-[var(--foreground)]">
             Created by Salam Khan as a Sadaqah Jariah initiative so people can
@@ -42,8 +50,8 @@ export default function AboutPage() {
             This site was created as a Sadaqah Jariah project so that people
             can continue benefiting from it even after the creator passes away.
             The intention is to spread beneficial knowledge, encourage ibadah
-            and reflection, and help people remember Allah through authentic
-            duas and adhkar.
+            and reflection, and help people remember Allah through carefully
+            reviewed duas and adhkar.
           </p>
           <p className="reading-copy text-[var(--muted)]">
             The idea for this website had been in the making for many years.
@@ -87,7 +95,7 @@ export default function AboutPage() {
             <Link
               href="https://sunnah.com/muslim:1631"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="text-sm font-medium text-[var(--brand)] underline decoration-[var(--border-strong)] underline-offset-4"
             >
               Sahih Muslim 1631
@@ -120,7 +128,7 @@ export default function AboutPage() {
             <Link
               href="https://quran.com/5/2"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="text-sm font-medium text-[var(--brand)] underline decoration-[var(--border-strong)] underline-offset-4"
             >
               Surah Al-Ma&apos;idah 5:2

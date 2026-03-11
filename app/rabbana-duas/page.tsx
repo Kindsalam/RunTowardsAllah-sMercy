@@ -1,10 +1,18 @@
+import { createMetadata } from "@/lib/seo";
 import Link from "next/link";
 
 import { BackToTopButton } from "@/components/back-to-top-button";
 import { DuaCard } from "@/components/dua-card";
 import { ExpandableDuaGroup } from "@/components/expandable-dua-group";
 import { StickySectionIndex } from "@/components/sticky-section-index";
-import { rabbanaDuas } from "@/data/rabbana-duas";
+import { publicRabbanaDuas } from "@/lib/public-content";
+
+export const metadata = createMetadata({
+  title: "Rabbana Duas",
+  description:
+    "Read reviewed Rabbana duas from the Qur'an with Arabic, English, Urdu, and clear surah and ayah references.",
+  path: "/rabbana-duas",
+});
 
 const rabbanaBenefits = [
   "Guidance, mercy, and forgiveness",
@@ -73,15 +81,20 @@ const rabbanaThemeSections = [
 ];
 
 export default function RabbanaDuasPage() {
-  const featuredDua = rabbanaDuas.find((item) => item.featured) ?? rabbanaDuas[0];
+  const featuredDua =
+    publicRabbanaDuas.find((item) => item.featured) ?? publicRabbanaDuas[0];
   const themeSections = rabbanaThemeSections
     .map((section) => ({
       ...section,
-      items: rabbanaDuas.filter(
+      items: publicRabbanaDuas.filter(
         (item) => item.theme === section.theme && item.id !== featuredDua.id,
       ),
     }))
     .filter((section) => section.items.length > 0);
+  const browseTarget =
+    themeSections.length > 0 ? "#all-rabbana-duas" : "#why-rabbana-duas-matter";
+  const browseLabel =
+    themeSections.length > 0 ? "Browse the duas" : "Why they matter";
   const sectionIndexLinks = [
     { href: "#featured-rabbana-dua", label: "Featured" },
     ...themeSections.map((section) => ({
@@ -111,8 +124,8 @@ export default function RabbanaDuasPage() {
               <Link href="#featured-rabbana-dua" className="button-primary">
                 Begin with a Rabbana dua
               </Link>
-              <Link href="#all-rabbana-duas" className="button-secondary">
-                Browse the duas
+              <Link href={browseTarget} className="button-secondary">
+                {browseLabel}
               </Link>
             </div>
           </div>
@@ -168,9 +181,9 @@ export default function RabbanaDuasPage() {
             Keep these supplications close
           </h2>
           <p className="reading-copy text-[var(--muted)]">
-            This starter page is intentionally seeded with five structured
-            entries only, so the full verified Rabbana collection can be added
-            later without changing the layout or card system.
+            This page currently carries a carefully reviewed starting set of
+            Rabbana duas. More entries can be added only after they are checked
+            with the same care.
           </p>
         </div>
 
@@ -182,19 +195,21 @@ export default function RabbanaDuasPage() {
         </div>
       </section>
 
-      <section id="all-rabbana-duas" className="space-y-10 scroll-mt-28">
-        {themeSections.map((section) => (
-          <ExpandableDuaGroup
-            key={section.id}
-            id={section.id}
-            eyebrow={section.theme}
-            title={section.title}
-            description={section.description}
-            items={section.items}
-            initialCount={3}
-          />
-        ))}
-      </section>
+      {themeSections.length > 0 ? (
+        <section id="all-rabbana-duas" className="space-y-10 scroll-mt-28">
+          {themeSections.map((section) => (
+            <ExpandableDuaGroup
+              key={section.id}
+              id={section.id}
+              eyebrow={section.theme}
+              title={section.title}
+              description={section.description}
+              items={section.items}
+              initialCount={3}
+            />
+          ))}
+        </section>
+      ) : null}
 
       <section id="why-rabbana-duas-matter" className="space-y-6 scroll-mt-28">
         <div className="max-w-3xl space-y-3">
@@ -233,7 +248,7 @@ export default function RabbanaDuasPage() {
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
-            <Link href="/morning-adhkar" className="button-primary">
+            <Link href="/adhkar#morning-adhkar-section" className="button-primary">
               Open Morning Adhkar
             </Link>
             <Link href="/last-ten-nights" className="button-secondary">

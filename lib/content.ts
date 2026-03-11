@@ -22,7 +22,7 @@ export const journeyLinks: JourneyLink[] = [
     title: "Morning Adhkar",
     eyebrow: "Start the day",
     description:
-      "Start your day with authentic remembrance, protection, gratitude, and trust in Allah.",
+      "Start your day with remembrance, protection, gratitude, and trust in Allah.",
     buttonLabel: "Open Morning Adhkar",
   },
   {
@@ -70,22 +70,22 @@ export const sourceReferences = [
   {
     label: "Quran.com: Surah Al-Baqarah 2:201",
     href: "https://quran.com/2/201",
-    note: "Sample Rabbana dua for good in this life and the next.",
+    note: "Rabbana dua for good in this life and the next.",
   },
   {
     label: "Quran.com: Surah Ali 'Imran 3:8",
     href: "https://quran.com/3/8",
-    note: "Sample Rabbana dua asking for steadfast hearts and mercy.",
+    note: "Rabbana dua asking for steadfast hearts and mercy.",
   },
   {
     label: "Quran.com: Surah Al-Furqan 25:74",
     href: "https://quran.com/25/74",
-    note: "Sample Rabbana dua for righteous families.",
+    note: "Rabbana dua for righteous families.",
   },
   {
     label: "Quran.com: Surah Al-Baqarah 2:286",
     href: "https://quran.com/2/286",
-    note: "Sample supplication for pardon, forgiveness, and mercy.",
+    note: "Supplication for pardon, forgiveness, and mercy.",
   },
   {
     label: "Sunnah.com: Sunan Ibn Majah 3850",
@@ -146,7 +146,7 @@ export const whyTheseNightsCards = [
   },
   {
     title: "For your tongue",
-    text: "Keep your tongue busy with authentic duas and adhkar, especially in the nights when reward is multiplied.",
+    text: "Keep your tongue busy with Qur’anic duas and reviewed adhkar, especially in the nights when reward is multiplied.",
   },
   {
     title: "For your akhirah",

@@ -1,4 +1,12 @@
+import { createMetadata } from "@/lib/seo";
 import { LegalPageShell } from "@/components/legal-page-shell";
+
+export const metadata = createMetadata({
+  title: "Privacy Policy",
+  description:
+    "Read how Mercy of Allah handles browser storage, reading preferences, and future analytics considerations.",
+  path: "/privacy-policy",
+});
 
 const sections = [
   {

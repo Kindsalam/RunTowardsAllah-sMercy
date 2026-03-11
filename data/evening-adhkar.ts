@@ -103,25 +103,6 @@ export const eveningAdhkar: DuaItem[] = [
     authenticity: "sahih",
   },
   {
-    id: "evening-abu-dawud-5073",
-    category: "evening",
-    title: "Sample: All blessing this evening is from Allah alone",
-    theme: "Gratitude",
-    benefit:
-      "It trains the heart to notice every blessing as coming from Allah alone and to end the day in gratitude.",
-    arabic:
-      "اللَّهُمَّ مَا أَمْسَى بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ، فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ",
-    transliteration:
-      "Allahumma ma amsa bi min ni‘matin aw bi ahadin min khalqik, faminka wahdaka la sharika lak, falaka l-hamdu wa laka sh-shukr",
-    english:
-      "O Allah, whatever blessing has come to me this evening, or to any of Your creation, is from You alone without partner. So all praise belongs to You, and all thanks belong to You.",
-    urdu:
-      "اے اللہ! شام کے وقت مجھ پر یا تیری مخلوق میں سے کسی پر جو بھی نعمت آئی ہے وہ صرف تیری طرف سے ہے، تیرا کوئی شریک نہیں، پس تمام تعریف اور شکر تیرے ہی لیے ہے۔",
-    sourceType: "hadith",
-    sourceReference: "Sunan Abi Dawud 5073",
-    repetition: "Read once in the evening",
-  },
-  {
     id: "evening-bukhari-6306",
     category: "evening",
     title: "Sayyid al-Istighfar",

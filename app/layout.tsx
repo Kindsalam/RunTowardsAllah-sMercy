@@ -4,13 +4,33 @@ import type { ReactNode } from "react";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { SiteSettingsProvider } from "@/components/site-settings-provider";
+import { defaultDescription, siteName, siteUrl } from "@/lib/seo";
 
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Run towards Mercy of Allah",
-  description:
-    "A calm, mobile-first reading space for Qur'anic duas, authentic adhkar, remembrance of Allah, and spiritual reflection.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteName,
+    template: `%s | ${siteName}`,
+  },
+  description: defaultDescription,
+  applicationName: siteName,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    siteName,
+    url: siteUrl,
+    title: siteName,
+    description: defaultDescription,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description: defaultDescription,
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

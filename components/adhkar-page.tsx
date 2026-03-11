@@ -60,11 +60,10 @@ export function AdhkarPage() {
     "evening-bukhari-4008",
   ]);
   const indexLinks = [
-    { href: "#morning-adhkar-section", label: "Morning" },
     { href: "#morning-opening", label: "Morning opening" },
     { href: "#morning-protection", label: "Morning protection" },
     { href: "#morning-praise", label: "Morning praise" },
-    { href: "#evening-adhkar-section", label: "Evening" },
+    { href: "#evening-opening", label: "Evening opening" },
     { href: "#evening-protection", label: "Night protection" },
     { href: "#evening-closing", label: "Before sleep" },
   ];
@@ -122,16 +121,6 @@ export function AdhkarPage() {
       <StickySectionIndex title="Jump to" links={indexLinks} />
 
       <section id="morning-adhkar-section" className="space-y-6 scroll-mt-28">
-        <div className="max-w-3xl space-y-3">
-          <p className="eyebrow">Morning Adhkar</p>
-          <h2 className="font-display text-3xl text-[var(--foreground)] sm:text-4xl">
-            Begin the day with remembrance
-          </h2>
-          <p className="reading-copy text-[var(--muted)]">
-            Start the morning with remembrance, gratitude, protection, and trust
-            in Allah.
-          </p>
-        </div>
         <ExpandableDuaGroup
           id="morning-opening"
           eyebrow="Morning opening"
@@ -165,16 +154,6 @@ export function AdhkarPage() {
       </section>
 
       <section id="evening-adhkar-section" className="space-y-6 scroll-mt-28">
-        <div className="max-w-3xl space-y-3">
-          <p className="eyebrow">Evening Adhkar</p>
-          <h2 className="font-display text-3xl text-[var(--foreground)] sm:text-4xl">
-            End the day with remembrance
-          </h2>
-          <p className="reading-copy text-[var(--muted)]">
-            Close the day with calm, gratitude, protection, repentance, and trust
-            in Allah.
-          </p>
-        </div>
         <ExpandableDuaGroup
           id="evening-opening"
           eyebrow="Evening opening"

@@ -15,6 +15,14 @@ const morningHeroDua = {
   sourceReference: "Jami` at-Tirmidhi 3524",
 };
 
+const reminderHeroAyah = {
+  id: "hero-ash-sharh-94-6",
+  title: "A reminder for the heart",
+  arabic: "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا",
+  english: "Surely with hardship comes ease.",
+  sourceReference: "Surah Ash-Sharh 94:6",
+};
+
 const featuredHeroDuas = [
   {
     key: "rabbana",
@@ -35,6 +43,12 @@ const featuredHeroDuas = [
       lastTenNights.find((dua) => dua.id === "laylatul-qadr-dua") ??
       lastTenNights[0],
     href: "/last-ten-nights#laylatul-qadr-dua",
+  },
+  {
+    key: "reminder",
+    label: "Reminder",
+    item: reminderHeroAyah,
+    href: "https://quran.com/94/6",
   },
 ] as const;
 

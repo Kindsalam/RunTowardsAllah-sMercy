@@ -6,16 +6,6 @@ import { ExpandableDuaGroup } from "@/components/expandable-dua-group";
 import { StickySectionIndex } from "@/components/sticky-section-index";
 import { rabbanaDuas } from "@/data/rabbana-duas";
 
-const themeChips = [
-  "Forgiveness",
-  "Mercy",
-  "Guidance",
-  "Protection",
-  "Patience",
-  "Dunya and Akhirah",
-  "Family and Offspring",
-];
-
 const rabbanaBenefits = [
   "Guidance, mercy, and forgiveness",
   "Patience, protection, and steadfastness",
@@ -169,25 +159,6 @@ export default function RabbanaDuasPage() {
           Read them slowly, understand their meaning, and make them part of
           your daily life.
         </p>
-      </section>
-
-      <section className="space-y-5">
-        <div className="max-w-3xl space-y-3">
-          <p className="eyebrow">Themes</p>
-          <h2 className="font-display text-3xl text-[var(--foreground)] sm:text-4xl">
-            Common themes running through these duas
-          </h2>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          {themeChips.map((chip) => (
-            <span
-              key={chip}
-              className="rounded-full border border-[var(--border-soft)] bg-[var(--surface)] px-4 py-2 text-sm text-[var(--foreground)] shadow-[0_12px_34px_rgba(8,24,19,0.04)]"
-            >
-              {chip}
-            </span>
-          ))}
-        </div>
       </section>
 
       <section id="featured-rabbana-dua" className="space-y-6 scroll-mt-28">

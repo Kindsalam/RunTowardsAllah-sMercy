@@ -118,6 +118,8 @@ export const lastTenNights: DuaItem[] = [
       "Aftara ‘indakumu s-sa’imun, wa akala ta‘amakumu l-abrar, wa sallat ‘alaykumu l-mala’ikah",
     english:
       "May the fasting people break their fast with you, may the righteous eat your food, and may the angels pray for blessing upon you.",
+    urdu:
+      "تمہارے پاس روزہ دار افطار کریں، نیک لوگ تمہارا کھانا کھائیں، اور فرشتے تمہارے لیے دعا کریں۔",
     sourceType: "hadith",
     sourceReference: "Sunan Abi Dawud 3854",
     sourceUrl: "https://sunnah.com/abudawud:3854",

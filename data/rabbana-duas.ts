@@ -7,7 +7,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-2-127",
     category: "rabbana",
-    title: "Sample: Accept this from us",
+    title: "Accept this from us",
     theme: "Mercy",
     benefit:
       "A dua for sincerity and acceptance, especially after worship, service, or any effort done for Allah.",
@@ -25,7 +25,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-2-128",
     category: "rabbana",
-    title: "Sample: Make us submitted to You",
+    title: "Make us submitted to You",
     theme: "Guidance",
     benefit:
       "This dua asks Allah for sincere submission, righteous descendants, and guidance in worship.",
@@ -64,7 +64,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-2-250",
     category: "rabbana",
-    title: "Sample: Pour patience upon us and make us firm",
+    title: "Pour patience upon us and make us firm",
     theme: "Patience",
     benefit:
       "A dua for patience, firmness, and divine help when life becomes heavy or frightening.",
@@ -84,7 +84,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-2-286-forget",
     category: "rabbana",
-    title: "Sample: Do not take us to task if we forget or err",
+    title: "Do not take us to task if we forget or err",
     theme: "Forgiveness",
     benefit:
       "A prayer for Allah's pardon when human weakness, forgetfulness, or mistakes occur.",
@@ -102,7 +102,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-2-286-burden",
     category: "rabbana",
-    title: "Sample: Do not place on us a burden as before",
+    title: "Do not place on us a burden as before",
     theme: "Protection",
     benefit:
       "A plea for relief from crushing burdens and from tests beyond what previous nations faced.",
@@ -120,7 +120,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-2-286-strength",
     category: "rabbana",
-    title: "Sample: Do not burden us beyond our strength",
+    title: "Do not burden us beyond our strength",
     theme: "Protection",
     benefit:
       "This gathers pardon, forgiveness, mercy, and divine help when life feels heavier than we can carry.",
@@ -138,7 +138,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-3-8",
     category: "rabbana",
-    title: "Sample: Keep our hearts firm after guidance",
+    title: "Keep our hearts firm after guidance",
     theme: "Guidance",
     benefit:
       "A dua for firmness after guidance and for asking Allah to keep the heart from deviation.",
@@ -158,7 +158,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-3-9",
     category: "rabbana",
-    title: "Sample: You will gather all people on the Day",
+    title: "You will gather all people on the Day",
     theme: "Dunya and Akhirah",
     benefit:
       "A reminder to live with certainty in the Last Day and trust in Allah's promise.",
@@ -176,7 +176,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-3-16",
     category: "rabbana",
-    title: "Sample: Forgive our sins and protect us from the Fire",
+    title: "Forgive our sins and protect us from the Fire",
     theme: "Forgiveness",
     benefit:
       "A concise dua combining faith, forgiveness, and protection from the Fire.",
@@ -194,7 +194,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-3-53",
     category: "rabbana",
-    title: "Sample: Register us among the witnesses",
+    title: "Register us among the witnesses",
     theme: "Guidance",
     benefit:
       "A dua for truthful faith, following the messenger, and being counted among the people of truth.",
@@ -212,7 +212,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-3-147",
     category: "rabbana",
-    title: "Sample: Forgive our sins and make our feet firm",
+    title: "Forgive our sins and make our feet firm",
     theme: "Patience",
     benefit:
       "This dua is for repentance, inner steadiness, and courage in hardship and opposition.",
@@ -230,7 +230,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-3-191",
     category: "rabbana",
-    title: "Sample: You did not create this without purpose",
+    title: "You did not create this without purpose",
     theme: "Protection",
     benefit:
       "A reflective dua that turns contemplation of creation into humility, reverence, and fear of the Fire.",
@@ -248,7 +248,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-3-192",
     category: "rabbana",
-    title: "Sample: Whoever enters the Fire is disgraced",
+    title: "Whoever enters the Fire is disgraced",
     theme: "Protection",
     benefit:
       "A stark reminder that salvation is Allah's mercy and protection from the Fire is among the greatest needs.",
@@ -266,7 +266,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-3-193-heard",
     category: "rabbana",
-    title: "Sample: We heard the call to faith and believed",
+    title: "We heard the call to faith and believed",
     theme: "Guidance",
     benefit:
       "A dua of grateful response to guidance, useful for renewing faith and obedience.",
@@ -284,7 +284,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-3-193-forgive",
     category: "rabbana",
-    title: "Sample: Forgive us and cause us to die with the righteous",
+    title: "Forgive us and cause us to die with the righteous",
     theme: "Forgiveness",
     benefit:
       "A dua for forgiveness, purification from sins, and a righteous ending.",
@@ -302,7 +302,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-3-194",
     category: "rabbana",
-    title: "Sample: Grant us what You promised through Your messengers",
+    title: "Grant us what You promised through Your messengers",
     theme: "Dunya and Akhirah",
     benefit:
       "This keeps hope alive in Allah's promises and the honor of the Hereafter.",
@@ -320,7 +320,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-5-83",
     category: "rabbana",
-    title: "Sample: Register us among the witnesses",
+    title: "Register us among the witnesses",
     theme: "Guidance",
     benefit:
       "A dua for truthful acknowledgment of revelation and for being counted among its sincere witnesses.",
@@ -338,7 +338,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-5-114",
     category: "rabbana",
-    title: "Sample: Send down to us a table from heaven",
+    title: "Send down to us a table from heaven",
     theme: "Dunya and Akhirah",
     benefit:
       "A dua asking Allah for provision, signs, and sustenance from Him alone.",
@@ -356,7 +356,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-7-23",
     category: "rabbana",
-    title: "Sample: We have wronged ourselves",
+    title: "We have wronged ourselves",
     theme: "Forgiveness",
     benefit:
       "A model of repentance, confession, and hope in Allah's mercy after wrongdoing.",
@@ -376,7 +376,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-7-47",
     category: "rabbana",
-    title: "Sample: Do not place us with the wrongdoing people",
+    title: "Do not place us with the wrongdoing people",
     theme: "Protection",
     benefit:
       "A short protection dua asking Allah to keep us away from the people and path of wrongdoing.",
@@ -394,7 +394,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-7-89",
     category: "rabbana",
-    title: "Sample: Decide between us and our people in truth",
+    title: "Decide between us and our people in truth",
     theme: "Guidance",
     benefit:
       "This dua is for truth, justice, and reliance on Allah when facing conflict or pressure.",
@@ -412,7 +412,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-7-126",
     category: "rabbana",
-    title: "Sample: Pour upon us patience and let us die as Muslims",
+    title: "Pour upon us patience and let us die as Muslims",
     theme: "Patience",
     benefit:
       "A prayer for endurance in trial and for a faithful ending upon Islam.",
@@ -430,7 +430,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-10-85-86",
     category: "rabbana",
-    title: "Sample: Do not make us a trial for the wrongdoing people",
+    title: "Do not make us a trial for the wrongdoing people",
     theme: "Protection",
     benefit:
       "A dua for safety from oppression and for rescue by Allah's mercy.",
@@ -448,7 +448,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-14-38",
     category: "rabbana",
-    title: "Sample: You know what we conceal and what we declare",
+    title: "You know what we conceal and what we declare",
     theme: "Guidance",
     benefit:
       "This keeps the heart honest before Allah, who knows what is hidden and what is shown.",
@@ -466,7 +466,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-14-40",
     category: "rabbana",
-    title: "Sample: Accept my supplication",
+    title: "Accept my supplication",
     theme: "Family and Offspring",
     benefit:
       "A dua for prayer, righteous descendants, and acceptance of supplication.",
@@ -484,7 +484,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-14-41",
     category: "rabbana",
-    title: "Sample: Forgive me, my parents, and the believers",
+    title: "Forgive me, my parents, and the believers",
     theme: "Family and Offspring",
     benefit:
       "This dua widens the heart from personal forgiveness to parents and all believers.",
@@ -502,7 +502,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-18-10",
     category: "rabbana",
-    title: "Sample: Grant us mercy and right guidance",
+    title: "Grant us mercy and right guidance",
     theme: "Mercy",
     benefit:
       "A beautiful dua for young hearts and anyone seeking mercy and a clear path in difficult circumstances.",
@@ -520,7 +520,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-20-45",
     category: "rabbana",
-    title: "Sample: We fear he may transgress against us",
+    title: "We fear he may transgress against us",
     theme: "Protection",
     benefit:
       "A dua to read before difficult conversations, opposition, or situations that feel intimidating.",
@@ -538,7 +538,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-23-109",
     category: "rabbana",
-    title: "Sample: Forgive us and have mercy on us",
+    title: "Forgive us and have mercy on us",
     theme: "Mercy",
     benefit:
       "A direct dua for forgiveness and mercy, with the heart turning to the Most Merciful.",
@@ -556,7 +556,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-25-65-66",
     category: "rabbana",
-    title: "Sample: Avert from us the punishment of Hell",
+    title: "Avert from us the punishment of Hell",
     theme: "Protection",
     benefit:
       "This keeps fear of the Hereafter alive and asks Allah for safety from Hellfire.",
@@ -574,7 +574,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-25-74",
     category: "rabbana",
-    title: "Sample: Grant us joy through family and offspring",
+    title: "Grant us joy through family and offspring",
     theme: "Family and Offspring",
     benefit:
       "A dua for righteous family life, comfort of the eyes, and leadership in goodness.",
@@ -594,7 +594,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-35-34",
     category: "rabbana",
-    title: "Sample: Our Lord is Forgiving and Appreciative",
+    title: "Our Lord is Forgiving and Appreciative",
     theme: "Mercy",
     benefit:
       "A short statement that fills the heart with gratitude and hope in Allah's forgiveness.",
@@ -612,7 +612,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-40-7",
     category: "rabbana",
-    title: "Sample: You encompass all things in mercy and knowledge",
+    title: "You encompass all things in mercy and knowledge",
     theme: "Mercy",
     benefit:
       "A deeply hopeful dua asking Allah's vast mercy and knowledge to cover the repentant.",
@@ -630,7 +630,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-40-8-9",
     category: "rabbana",
-    title: "Sample: Admit them to the gardens and protect them from evil",
+    title: "Admit them to the gardens and protect them from evil",
     theme: "Family and Offspring",
     benefit:
       "This dua asks for entry into Jannah together with righteous family and protection from evil consequences.",
@@ -648,7 +648,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-59-10-forgive",
     category: "rabbana",
-    title: "Sample: Forgive us and our brothers who preceded us in faith",
+    title: "Forgive us and our brothers who preceded us in faith",
     theme: "Forgiveness",
     benefit:
       "A dua that teaches love for believers, forgiveness for earlier Muslims, and purity of heart.",
@@ -666,7 +666,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-59-10-hearts",
     category: "rabbana",
-    title: "Sample: Do not place resentment in our hearts",
+    title: "Do not place resentment in our hearts",
     theme: "Mercy",
     benefit:
       "This is a powerful dua for cleansing the heart from resentment and keeping brotherhood sound.",
@@ -684,7 +684,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-60-4",
     category: "rabbana",
-    title: "Sample: Upon You we rely and to You we return",
+    title: "Upon You we rely and to You we return",
     theme: "Guidance",
     benefit:
       "A brief and steadying formula of tawakkul, repentance, and return to Allah.",
@@ -702,7 +702,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-60-5",
     category: "rabbana",
-    title: "Sample: Do not make us a trial for the disbelievers",
+    title: "Do not make us a trial for the disbelievers",
     theme: "Protection",
     benefit:
       "A dua asking Allah for protection from humiliation, misguidance, and the harm of hostile people.",
@@ -720,7 +720,7 @@ export const rabbanaDuas: DuaItem[] = [
   {
     id: "rabbana-66-8",
     category: "rabbana",
-    title: "Sample: Perfect our light and forgive us",
+    title: "Perfect our light and forgive us",
     theme: "Forgiveness",
     benefit:
       "A dua for sincere repentance, complete light on the Day of Resurrection, and Allah's forgiveness.",

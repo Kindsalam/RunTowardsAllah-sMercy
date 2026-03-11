@@ -41,13 +41,13 @@ export default function HomePage() {
       item:
         publicRabbanaDuas.find((dua) => dua.id === "rabbana-2-201") ??
         publicRabbanaDuas[0],
-      href: "/rabbana-duas#rabbana-2-201",
+      href: "/quran/rabbana-duas#rabbana-2-201",
     },
     {
       key: "morning" as const,
       label: "Morning",
       item: morningHeroDua,
-      href: "/adhkar#morning-adhkar-section",
+      href: "/adhkar/morning",
     },
     {
       key: "laylatul-qadr" as const,
@@ -274,7 +274,7 @@ export default function HomePage() {
             <Link href="/last-ten-nights" className="button-primary">
               Begin with Last 10 Nights
             </Link>
-            <Link href="/rabbana-duas" className="button-secondary">
+            <Link href="/quran/rabbana-duas" className="button-secondary">
               Read Rabbana Duas
             </Link>
           </div>

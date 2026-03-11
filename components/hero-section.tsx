@@ -63,11 +63,11 @@ export function HeroSection({ featuredItems }: HeroSectionProps) {
             Arabic, English, and Urdu.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="/last-ten-nights" className="button-light sm:min-w-[10.5rem]">
+            <Link href="/duas" className="button-light sm:min-w-[10.5rem]">
               Explore Duas
             </Link>
             <Link
-              href="/rabbana-duas"
+              href="/quran/rabbana-duas"
               className="button-ghost-light sm:min-w-[10.5rem]"
             >
               Read Rabbana Duas

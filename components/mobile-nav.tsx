@@ -6,10 +6,10 @@ import { useState } from "react";
 
 import { FontSizeControl } from "@/components/font-size-control";
 import { ThemeToggle } from "@/components/theme-toggle";
-import type { JourneyLink } from "@/lib/types";
+import type { JourneyLink, NavLink } from "@/lib/types";
 
 type MobileNavProps = {
-  links: Array<{ href: string; label: string; aliases?: string[] }>;
+  links: NavLink[];
   featuredLinks: JourneyLink[];
 };
 
@@ -31,24 +31,49 @@ export function MobileNav({ links, featuredLinks }: MobileNavProps) {
 
       {open ? (
         <div className="absolute right-0 top-full z-50 mt-3 w-[min(24rem,calc(100vw-2rem))] rounded-[28px] border border-[var(--border-soft)] bg-[var(--surface)] p-4 shadow-[0_24px_80px_rgba(0,0,0,0.14)]">
-          <nav className="grid gap-2">
+          <nav className="grid gap-3">
             {links.map((link) => {
               const active =
-                pathname === link.href || link.aliases?.includes(pathname) === true;
+                (link.href === "/" && pathname === "/") ||
+                pathname === link.href ||
+                pathname.startsWith(`${link.href}/`) ||
+                link.aliases?.includes(pathname) === true;
 
               return (
-                <Link
+                <div
                   key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className={`rounded-xl border-b border-[var(--border-soft)] px-3 py-3 text-sm transition ${
-                    active
-                      ? "bg-[var(--accent-green-soft)] text-[var(--foreground)]"
-                      : "text-[var(--muted)] hover:bg-[var(--accent-green-soft)] hover:text-[var(--brand)]"
+                  className={`rounded-[22px] border border-[var(--border-soft)] px-3 py-3 transition ${
+                    active ? "bg-[var(--accent-green-soft)]/55" : "bg-[var(--background)]"
                   }`}
                 >
-                  {link.label}
-                </Link>
+                  <Link
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className={`block text-sm font-medium transition ${
+                      active ? "text-[var(--foreground)]" : "text-[var(--muted)]"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                  {link.children?.length ? (
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {link.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          onClick={() => setOpen(false)}
+                          className={`rounded-full border px-3 py-1.5 text-xs transition ${
+                            pathname === child.href
+                              ? "border-[var(--border-strong)] bg-[var(--surface)] text-[var(--foreground)]"
+                              : "border-[var(--border-soft)] bg-[var(--surface)] text-[var(--muted)] hover:text-[var(--brand)]"
+                          }`}
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
               );
             })}
           </nav>

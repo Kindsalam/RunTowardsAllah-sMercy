@@ -1,4 +1,4 @@
-import type { JourneyLink } from "@/lib/types";
+import type { JourneyLink, NavLink } from "@/lib/types";
 
 export const journeyLinks: JourneyLink[] = [
   {
@@ -10,7 +10,7 @@ export const journeyLinks: JourneyLink[] = [
     buttonLabel: "Begin with these nights",
   },
   {
-    href: "/rabbana-duas",
+    href: "/quran/rabbana-duas",
     title: "Qur’anic Rabbana Duas",
     eyebrow: "From the Qur'an",
     description:
@@ -18,7 +18,7 @@ export const journeyLinks: JourneyLink[] = [
     buttonLabel: "Read Rabbana Duas",
   },
   {
-    href: "/adhkar#morning-adhkar-section",
+    href: "/adhkar/morning",
     title: "Morning Adhkar",
     eyebrow: "Start the day",
     description:
@@ -26,7 +26,7 @@ export const journeyLinks: JourneyLink[] = [
     buttonLabel: "Open Morning Adhkar",
   },
   {
-    href: "/adhkar#evening-adhkar-section",
+    href: "/adhkar/evening",
     title: "Evening Adhkar",
     eyebrow: "Close the day",
     description:
@@ -35,20 +35,57 @@ export const journeyLinks: JourneyLink[] = [
   },
 ];
 
-export const siteLinks = [
+export const siteLinks: NavLink[] = [
   { href: "/", label: "Home" },
   {
     href: "/last-ten-nights",
     label: "Last 10 Nights",
   },
   {
-    href: "/rabbana-duas",
-    label: "Rabbana Duas",
-  },
-  {
     href: "/adhkar",
     label: "Adhkar",
     aliases: ["/morning-adhkar", "/morning-azkar", "/evening-adhkar", "/evening-azkar"],
+    children: [
+      { href: "/adhkar/morning", label: "Morning" },
+      { href: "/adhkar/evening", label: "Evening" },
+      { href: "/adhkar/sleep", label: "Sleep" },
+      { href: "/adhkar/protection", label: "Protection" },
+      { href: "/adhkar/travel", label: "Travel" },
+    ],
+  },
+  {
+    href: "/duas",
+    label: "Duas",
+    children: [
+      { href: "/duas/prophetic", label: "Prophetic Duas" },
+      { href: "/duas/shifa", label: "Shifa" },
+      { href: "/duas/forgiveness", label: "Forgiveness" },
+      { href: "/duas/rizq", label: "Rizq" },
+      { href: "/duas/family", label: "Family" },
+      { href: "/duas/travel", label: "Travel" },
+      { href: "/duas/daily-life", label: "Daily Life" },
+    ],
+  },
+  {
+    href: "/quran",
+    label: "Qur’an",
+    aliases: ["/rabbana-duas"],
+    children: [
+      { href: "/quran/rabbana-duas", label: "Rabbana Duas" },
+      { href: "/quran/ayat-of-mercy", label: "Ayat of Mercy" },
+      { href: "/quran/ayat-of-forgiveness", label: "Ayat of Forgiveness" },
+      { href: "/quran/ayat-of-guidance", label: "Ayat of Guidance" },
+    ],
+  },
+  {
+    href: "/about",
+    label: "About",
+    aliases: ["/sources", "/methodology", "/disclaimer", "/privacy-policy", "/terms-of-use", "/cookie-policy"],
+    children: [
+      { href: "/sources", label: "Sources" },
+      { href: "/methodology", label: "Methodology" },
+      { href: "/disclaimer", label: "Disclaimer" },
+    ],
   },
 ];
 
@@ -57,6 +94,212 @@ export const legalLinks = [
   { href: "/terms-of-use", label: "Terms of Use" },
   { href: "/cookie-policy", label: "Cookie Policy" },
   { href: "/disclaimer", label: "Disclaimer" },
+];
+
+export const aboutLinks = [
+  { href: "/about", label: "About" },
+  { href: "/sources", label: "Sources" },
+  { href: "/methodology", label: "Methodology" },
+  { href: "/disclaimer", label: "Disclaimer" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/terms-of-use", label: "Terms of Use" },
+  { href: "/cookie-policy", label: "Cookie Policy" },
+];
+
+export const adhkarCategoryCards: JourneyLink[] = [
+  {
+    href: "/adhkar/morning",
+    title: "Morning Adhkar",
+    eyebrow: "Start the day",
+    description:
+      "Begin the morning with remembrance, gratitude, and reliance upon Allah before the day unfolds.",
+    buttonLabel: "Open Morning Adhkar",
+  },
+  {
+    href: "/adhkar/evening",
+    title: "Evening Adhkar",
+    eyebrow: "Close the day",
+    description:
+      "End the day with protection, reflection, and calm remembrance before the night settles.",
+    buttonLabel: "Open Evening Adhkar",
+  },
+  {
+    href: "/adhkar/sleep",
+    title: "Sleep Adhkar",
+    eyebrow: "Before rest",
+    description:
+      "A dedicated section for bedtime remembrance and the words to keep close before sleep.",
+    buttonLabel: "Explore Sleep Adhkar",
+  },
+  {
+    href: "/adhkar/protection",
+    title: "Protection Adhkar",
+    eyebrow: "Safety and well-being",
+    description:
+      "A place for adhkar of protection, refuge, and well-being through the day and night.",
+    buttonLabel: "Explore Protection Adhkar",
+  },
+  {
+    href: "/adhkar/travel",
+    title: "Travel Adhkar",
+    eyebrow: "Journeys and movement",
+    description:
+      "Keep travel remembrance close for departures, transitions, and safe return, in sha Allah.",
+    buttonLabel: "Explore Travel Adhkar",
+  },
+];
+
+export const duaCategoryCards: JourneyLink[] = [
+  {
+    href: "/duas/prophetic",
+    title: "Prophetic Duas",
+    eyebrow: "From the Sunnah",
+    description:
+      "A dedicated home for prophetic supplications across different moments of life and worship.",
+    buttonLabel: "Open Prophetic Duas",
+  },
+  {
+    href: "/duas/shifa",
+    title: "Duas for Shifa",
+    eyebrow: "Healing and relief",
+    description:
+      "A carefully prepared section for duas connected to healing, relief, and asking Allah for well-being.",
+    buttonLabel: "Open Shifa Duas",
+  },
+  {
+    href: "/duas/forgiveness",
+    title: "Duas for Forgiveness",
+    eyebrow: "Tawbah and pardon",
+    description:
+      "Supplications that help the heart return to repentance, humility, and hope in Allah’s mercy.",
+    buttonLabel: "Open Forgiveness Duas",
+  },
+  {
+    href: "/duas/rizq",
+    title: "Duas for Rizq",
+    eyebrow: "Provision and barakah",
+    description:
+      "A section for supplications about provision, sufficiency, gratitude, and halal barakah.",
+    buttonLabel: "Open Rizq Duas",
+  },
+  {
+    href: "/duas/family",
+    title: "Duas for Family",
+    eyebrow: "Home and loved ones",
+    description:
+      "A place for duas connected to righteous homes, spouses, children, and family well-being.",
+    buttonLabel: "Open Family Duas",
+  },
+  {
+    href: "/duas/travel",
+    title: "Travel Duas",
+    eyebrow: "Journeys and return",
+    description:
+      "Supplications for departure, travel, reliance upon Allah, and safe return.",
+    buttonLabel: "Open Travel Duas",
+  },
+  {
+    href: "/duas/daily-life",
+    title: "Daily Life Duas",
+    eyebrow: "Ordinary moments",
+    description:
+      "A growing place for duas connected to daily routines, habits, and moments of ordinary life.",
+    buttonLabel: "Open Daily Life Duas",
+  },
+];
+
+export const quranCategoryCards: JourneyLink[] = [
+  {
+    href: "/quran/rabbana-duas",
+    title: "Rabbana Duas",
+    eyebrow: "Qur’anic supplications",
+    description:
+      "Read the Rabbana duas taught in the Qur’an for guidance, mercy, forgiveness, patience, and success.",
+    buttonLabel: "Open Rabbana Duas",
+  },
+  {
+    href: "/quran/ayat-of-mercy",
+    title: "Ayat of Mercy",
+    eyebrow: "Rahmah and hope",
+    description:
+      "A section being prepared for Qur’anic verses that call the heart toward Allah’s mercy and hope.",
+    buttonLabel: "Open Ayat of Mercy",
+  },
+  {
+    href: "/quran/ayat-of-forgiveness",
+    title: "Ayat of Forgiveness",
+    eyebrow: "Maghfirah and return",
+    description:
+      "A dedicated place for verses that strengthen repentance, forgiveness, and return to Allah.",
+    buttonLabel: "Open Ayat of Forgiveness",
+  },
+  {
+    href: "/quran/ayat-of-guidance",
+    title: "Ayat of Guidance",
+    eyebrow: "Light and direction",
+    description:
+      "A section for Qur’anic verses that steady the heart with guidance, clarity, and purpose.",
+    buttonLabel: "Open Ayat of Guidance",
+  },
+];
+
+export const aboutSectionCards: JourneyLink[] = [
+  {
+    href: "/about",
+    title: "About",
+    eyebrow: "Project intention",
+    description:
+      "Read the intention, background, and long-term purpose behind this Sadaqah Jariyah project.",
+    buttonLabel: "Open About",
+  },
+  {
+    href: "/sources",
+    title: "Sources",
+    eyebrow: "References and review",
+    description:
+      "See how Qur’an and hadith references are shown, reviewed, and kept visible across the site.",
+    buttonLabel: "Open Sources",
+  },
+  {
+    href: "/methodology",
+    title: "Methodology",
+    eyebrow: "How content is handled",
+    description:
+      "Understand the principles used for content selection, source visibility, and correction handling.",
+    buttonLabel: "Open Methodology",
+  },
+  {
+    href: "/disclaimer",
+    title: "Disclaimer",
+    eyebrow: "Care and verification",
+    description:
+      "Read the disclaimer about review, AI-assisted production, and the need for careful verification.",
+    buttonLabel: "Open Disclaimer",
+  },
+  {
+    href: "/privacy-policy",
+    title: "Privacy Policy",
+    eyebrow: "Storage and respect",
+    description:
+      "Review the site’s simple approach to privacy, local storage, and future analytics changes.",
+    buttonLabel: "Open Privacy Policy",
+  },
+  {
+    href: "/terms-of-use",
+    title: "Terms of Use",
+    eyebrow: "Use with care",
+    description:
+      "Read the terms that frame responsible use, sharing, and verification of religious content.",
+    buttonLabel: "Open Terms of Use",
+  },
+  {
+    href: "/cookie-policy",
+    title: "Cookie Policy",
+    eyebrow: "Minimal storage",
+    description:
+      "See how the site handles functional storage and lightweight preference saving.",
+    buttonLabel: "Open Cookie Policy",
+  },
 ];
 
 export const correctionContact = "salam @ mercyofallah . com";

@@ -1,23 +1,26 @@
-import { AdhkarAliasPage } from "@/components/adhkar-alias-page";
+import { RouteBridgePage } from "@/components/route-bridge-page";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
   title: "Evening Adhkar",
   description:
-    "Evening adhkar now lives inside the combined daily adhkar page.",
+    "Evening adhkar now lives inside the Adhkar section of the site.",
   path: "/evening-adhkar",
-  canonicalPath: "/adhkar",
+  canonicalPath: "/adhkar/evening",
   noIndex: true,
 });
 
 export default function EveningAdhkarRoute() {
   return (
-    <AdhkarAliasPage
+    <RouteBridgePage
       eyebrow="Evening Adhkar"
-      title="Evening adhkar now lives inside the daily adhkar page"
-      description="Use the combined adhkar page to open the evening remembrance section."
-      targetHref="/adhkar#evening-adhkar-section"
-      targetLabel="Open Evening Adhkar"
+      title="Evening adhkar now lives inside the Adhkar section"
+      description="Use the dedicated evening route inside the Adhkar section for the current public page."
+      supportingText="This older URL still works, but the main route now lives inside the wider Adhkar section."
+      primaryHref="/adhkar/evening"
+      primaryLabel="Open Evening Adhkar"
+      secondaryHref="/adhkar"
+      secondaryLabel="Open Adhkar"
     />
   );
 }

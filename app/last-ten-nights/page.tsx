@@ -163,7 +163,7 @@ export default function LastTenNightsPage() {
           </p>
         </div>
         <div className="flex lg:justify-end">
-          <Link href="/rabbana-duas" className="button-secondary">
+          <Link href="/quran/rabbana-duas" className="button-secondary">
             Read Rabbana Duas
           </Link>
         </div>
@@ -186,7 +186,7 @@ export default function LastTenNightsPage() {
               text={featuredCopyText}
               label="Copy the Laylatul Qadr dua"
             />
-            <Link href="/adhkar#evening-adhkar-section" className="button-secondary">
+            <Link href="/adhkar/evening" className="button-secondary">
               Open Evening Adhkar
             </Link>
           </div>

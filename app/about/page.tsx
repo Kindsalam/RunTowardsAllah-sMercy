@@ -1,7 +1,9 @@
 import Link from "next/link";
 
+import { CategoryCard } from "@/components/category-card";
 import { CorrectionNote } from "@/components/correction-note";
 import { PageHero } from "@/components/page-hero";
+import { aboutSectionCards } from "@/lib/content";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
@@ -181,6 +183,24 @@ export default function AboutPage() {
             ))}
           </div>
         </article>
+      </section>
+
+      <section className="space-y-6 border-t border-[var(--border-soft)] pt-6">
+        <div className="max-w-3xl space-y-3">
+          <p className="eyebrow">About section links</p>
+          <h2 className="font-display text-3xl text-[var(--foreground)] sm:text-4xl">
+            Read the trust, method, and policy pages
+          </h2>
+          <p className="reading-copy text-[var(--muted)]">
+            Use these pages to understand the project, its sources, its
+            methodology, and the practical policies around verification and use.
+          </p>
+        </div>
+        <div className="grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
+          {aboutSectionCards.map((card) => (
+            <CategoryCard key={card.href} {...card} />
+          ))}
+        </div>
       </section>
 
       <CorrectionNote plain />

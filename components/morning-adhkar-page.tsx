@@ -1,5 +1,5 @@
 import { DailyAdhkarPage } from "@/components/daily-adhkar-page";
-import { morningAdhkar } from "@/data/morning-adhkar";
+import { publicMorningAdhkar } from "@/lib/public-content";
 
 const benefitCards = [
   {
@@ -20,10 +20,10 @@ export function MorningAdhkarPage() {
   return (
     <DailyAdhkarPage
       tone="morning"
-      items={morningAdhkar}
-      heroLabel="Authentic Daily Remembrance"
+      items={publicMorningAdhkar}
+      heroLabel="Daily remembrance"
       heroTitle="Morning Adhkar"
-      heroParagraph="Begin your day with remembrance, protection, gratitude, and trust in Allah. Read authentic morning adhkar in Arabic with full harakat, along with English and Urdu translation, in a calm and easy mobile-friendly layout."
+      heroParagraph="Begin your day with remembrance, protection, gratitude, and trust in Allah. Read morning adhkar in Arabic with full harakat, along with English and Urdu translation, in a calm and easy mobile-friendly layout."
       heroPreviewArabic="أَصْبَحْنَا عَلَى فِطْرَةِ الْإِسْلَامِ، وَعَلَى كَلِمَةِ الْإِخْلَاصِ"
       heroPreviewText="Let the first words of the day draw the heart back to gratitude, reliance, and calm."
       introTitle="Start the day with what benefits the heart"
@@ -31,15 +31,15 @@ export function MorningAdhkarPage() {
       introSupportingLine="Read a little with consistency rather than rushing through a lot without presence."
       benefitCards={benefitCards}
       listTitle="Morning words to keep close"
-      listIntro="This starter page is intentionally seeded with a small structured set only, so the full verified morning adhkar collection can be added later without changing the page design."
+      listIntro="Keep this reviewed morning set close and return to it with consistency. The aim is a clear, calm reading flow rather than clutter."
       reflectionTitle="Small words, repeated with sincerity"
       reflectionParagraph="Morning adhkar are not long for the sake of length. Their value is in truthfulness, consistency, and presence of heart. A believer begins the day by remembering Allah, asking for good, and seeking protection before stepping into the duties of life."
       bottomTitle="Carry remembrance into the rest of your day"
       bottomParagraph="Return to these words every morning and let them become part of your routine. What begins with remembrance is more likely to stay grounded, grateful, and protected."
       primaryCtaLabel="Open Evening Adhkar"
-      primaryCtaHref="/evening-adhkar"
+      primaryCtaHref="/adhkar/evening"
       secondaryCtaLabel="Read Rabbana Duas"
-      secondaryCtaHref="/rabbana-duas"
+      secondaryCtaHref="/quran/rabbana-duas"
       completionStoragePrefix="morning-read"
     />
   );

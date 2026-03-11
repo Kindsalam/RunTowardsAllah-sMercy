@@ -29,3 +29,15 @@ export type JourneyLink = {
   description: string;
   buttonLabel: string;
 };
+
+export type NavChildLink = {
+  href: string;
+  label: string;
+};
+
+export type NavLink = {
+  href: string;
+  label: string;
+  aliases?: string[];
+  children?: NavChildLink[];
+};

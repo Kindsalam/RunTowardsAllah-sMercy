@@ -1,6 +1,10 @@
 import Link from "next/link";
 
 import { DuaCard } from "@/components/dua-card";
+import {
+  PremiumHeroPanel,
+  PremiumPageHero,
+} from "@/components/premium-page-hero";
 import type { DuaItem } from "@/lib/types";
 
 type BenefitCard = {
@@ -33,33 +37,6 @@ type DailyAdhkarPageProps = {
   completionStoragePrefix: string;
 };
 
-const toneClasses = {
-  morning: {
-    hero:
-      "bg-[linear-gradient(180deg,color-mix(in_srgb,var(--surface)_84%,rgba(201,171,103,0.12)_16%),var(--surface))] shadow-[0_24px_90px_rgba(8,24,19,0.08)]",
-    overlay:
-      "bg-[radial-gradient(circle_at_top_right,_rgba(201,171,103,0.18)_0%,_transparent_34%),radial-gradient(circle_at_bottom_left,_rgba(16,77,57,0.09)_0%,_transparent_36%)]",
-    previewGlow:
-      "bg-[radial-gradient(circle,_rgba(201,171,103,0.28)_0%,_rgba(201,171,103,0.08)_36%,_transparent_68%)]",
-    previewCard: "bg-[var(--surface)]/95 border-[var(--border-soft)]",
-    previewAccent: "bg-[var(--accent-soft)] border-[var(--border-soft)]",
-    previewText: "text-[var(--foreground)]",
-    previewNote: "bg-[var(--background)] text-[var(--muted)] border-[var(--border-soft)]",
-  },
-  evening: {
-    hero:
-      "bg-[linear-gradient(155deg,rgba(8,20,15,0.96)_0%,rgba(16,46,36,0.94)_54%,rgba(201,171,103,0.18)_100%)] text-white shadow-[0_30px_120px_rgba(4,12,9,0.24)]",
-    overlay:
-      "bg-[radial-gradient(circle_at_top_right,_rgba(255,244,214,0.14)_0%,_transparent_32%),radial-gradient(circle_at_bottom_left,_rgba(201,171,103,0.14)_0%,_transparent_36%)]",
-    previewGlow:
-      "bg-[radial-gradient(circle,_rgba(255,244,214,0.34)_0%,_rgba(255,244,214,0.08)_36%,_transparent_68%)]",
-    previewCard: "bg-white/10 border-white/15 backdrop-blur-md",
-    previewAccent: "bg-white/10 border-white/20",
-    previewText: "text-white",
-    previewNote: "bg-black/10 text-white/78 border-white/10",
-  },
-} as const;
-
 export function DailyAdhkarPage({
   tone,
   items,
@@ -88,70 +65,50 @@ export function DailyAdhkarPage({
   const remainingItems = items.filter((item) => item.id !== featuredItem.id);
   const firstGroup = remainingItems.slice(0, 2);
   const secondGroup = remainingItems.slice(2);
-  const classes = toneClasses[tone];
+  const focusTitle =
+    tone === "morning"
+      ? "What to keep close at the start of the day"
+      : "What to keep close as the day settles";
+  const focusLabel = tone === "morning" ? "Morning focus" : "Evening focus";
+  const previewLabel =
+    tone === "morning" ? "A word to begin with" : "A word to end with";
 
   return (
     <div className="page-shell space-y-12 py-6 pb-16 sm:space-y-16 sm:py-8">
-      <section
-        className={`relative overflow-hidden rounded-[34px] border border-[var(--border-soft)] px-5 py-8 sm:px-8 sm:py-10 lg:px-10 ${classes.hero}`}
-      >
-        <div className={`absolute inset-0 ${classes.overlay}`} />
-        {tone === "evening" ? (
-          <div className="absolute inset-0 opacity-20 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:44px_44px]" />
-        ) : null}
-        <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <div className="max-w-3xl space-y-4">
-            <p
-              className={
-                tone === "evening"
-                  ? "inline-flex rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.24em] text-white/80 backdrop-blur"
-                  : "eyebrow"
-              }
-            >
-              {heroLabel}
-            </p>
-            <h1
-              className={`font-display text-4xl leading-none sm:text-5xl lg:text-6xl ${
-                tone === "evening" ? "text-white" : "text-[var(--foreground)]"
-              }`}
-            >
-              {heroTitle}
-            </h1>
-            <p
-              className={`reading-copy max-w-2xl ${
-                tone === "evening" ? "text-white/82" : "text-[var(--muted)]"
-              }`}
-            >
-              {heroParagraph}
-            </p>
-          </div>
-
-          <div className="relative">
-            <div
-              className={`absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full blur-xl ${classes.previewGlow}`}
+      <PremiumPageHero
+        eyebrow={heroLabel}
+        title={heroTitle}
+        description={heroParagraph}
+        actions={
+          <>
+            <Link href="#main-adhkar-list" className="button-primary">
+              Go to the adhkar list
+            </Link>
+            <Link href={primaryCtaHref} className="button-secondary">
+              {primaryCtaLabel}
+            </Link>
+          </>
+        }
+        aside={
+          <>
+            <PremiumHeroPanel
+              eyebrow={focusLabel}
+              title={focusTitle}
+              items={benefitCards.map((card) => card.title)}
+              description={introSupportingLine}
             />
-            <div
-              className={`relative mx-auto max-w-sm rounded-[28px] border p-5 shadow-[0_20px_70px_rgba(8,24,19,0.06)] ${classes.previewCard}`}
+            <PremiumHeroPanel
+              eyebrow={previewLabel}
+              tone="dark"
             >
-              <div className="space-y-4">
-                <div
-                  className={`h-11 w-11 rounded-full border ${classes.previewAccent}`}
-                />
-                <p
-                  className={`arabic-text reading-arabic-sm text-right ${classes.previewText}`}
-                >
-                  {heroPreviewArabic}
-                </p>
-                <div
-                  className={`reading-copy rounded-[22px] border p-4 ${classes.previewNote}`}
-                >
-                  {heroPreviewText}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+              <p className="arabic-text reading-arabic-sm text-right text-white">
+                {heroPreviewArabic}
+              </p>
+              <p className="reading-copy text-white/86">{heroPreviewText}</p>
+            </PremiumHeroPanel>
+          </>
+        }
+      />
 
       <section className="rounded-[32px] border border-[var(--border-soft)] bg-[var(--surface)] px-5 py-8 shadow-[0_20px_80px_rgba(8,24,19,0.07)] sm:px-8">
         <div className="max-w-3xl space-y-4">
@@ -185,7 +142,7 @@ export function DailyAdhkarPage({
         ))}
       </section>
 
-      <section className="space-y-6">
+      <section id="main-adhkar-list" className="space-y-6 scroll-mt-28">
         <div className="max-w-3xl space-y-3">
           <p className="eyebrow">Main adhkar list</p>
           <h2 className="font-display text-3xl text-[var(--foreground)] sm:text-4xl">

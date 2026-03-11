@@ -13,7 +13,15 @@ export function Header() {
   const pathname = usePathname();
 
   function isActive(href: string, aliases?: string[]) {
-    return pathname === href || aliases?.includes(pathname) === true;
+    if (href === "/") {
+      return pathname === "/";
+    }
+
+    return (
+      pathname === href ||
+      pathname.startsWith(`${href}/`) ||
+      aliases?.includes(pathname) === true
+    );
   }
 
   return (
@@ -35,26 +43,57 @@ export function Header() {
         </Link>
 
         <nav className="hidden flex-1 items-center justify-start gap-2 lg:flex lg:pl-3 xl:gap-3 xl:pl-5">
-          {siteLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`relative inline-flex items-center justify-center rounded-full px-2.5 py-2 text-sm leading-tight whitespace-nowrap transition xl:px-3 ${
-                isActive(link.href, link.aliases)
-                  ? "bg-[var(--accent-green-soft)] text-[var(--foreground)]"
-                  : "text-[var(--muted)] hover:bg-[var(--accent-green-soft)] hover:text-[var(--brand)]"
-              }`}
-            >
-              <span>{link.label}</span>
-              <span
-                className={`absolute bottom-0 left-0 h-px w-full origin-center bg-[var(--brand)] transition ${
-                  isActive(link.href, link.aliases)
-                    ? "scale-x-100 opacity-100"
-                    : "scale-x-0 opacity-0"
-                }`}
-              />
-            </Link>
-          ))}
+          {siteLinks.map((link) => {
+            const active = isActive(link.href, link.aliases);
+            const alignMenu = link.href === "/about" ? "right-0" : "left-0";
+
+            return (
+              <div key={link.href} className="group relative">
+                <Link
+                  href={link.href}
+                  className={`relative inline-flex items-center justify-center gap-1 rounded-full px-2.5 py-2 text-sm leading-tight whitespace-nowrap transition xl:px-3 ${
+                    active
+                      ? "bg-[var(--accent-green-soft)] text-[var(--foreground)]"
+                      : "text-[var(--muted)] hover:bg-[var(--accent-green-soft)] hover:text-[var(--brand)]"
+                  }`}
+                >
+                  <span>{link.label}</span>
+                  {link.children?.length ? (
+                    <span className="text-[10px] text-current/70">▾</span>
+                  ) : null}
+                  <span
+                    className={`absolute bottom-0 left-0 h-px w-full origin-center bg-[var(--brand)] transition ${
+                      active ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
+                    }`}
+                  />
+                </Link>
+
+                {link.children?.length ? (
+                  <div
+                    className={`pointer-events-none absolute top-full z-50 pt-3 opacity-0 transition duration-150 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 ${alignMenu}`}
+                  >
+                    <div className="w-56 rounded-[24px] border border-[var(--border-soft)] bg-[var(--surface)] p-3 shadow-[0_24px_80px_rgba(0,0,0,0.12)]">
+                      <div className="grid gap-1">
+                        {link.children.map((child) => (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            className={`rounded-2xl px-3 py-2 text-sm transition ${
+                              pathname === child.href
+                                ? "bg-[var(--accent-green-soft)] text-[var(--foreground)]"
+                                : "text-[var(--muted)] hover:bg-[var(--accent-green-soft)] hover:text-[var(--brand)]"
+                            }`}
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+            );
+          })}
         </nav>
 
         <div className="hidden flex-none items-center gap-2 lg:flex">

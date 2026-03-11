@@ -59,7 +59,7 @@ export const legalLinks = [
   { href: "/disclaimer", label: "Disclaimer" },
 ];
 
-export const correctionContact = "from abdul salam @ gmail . com";
+export const correctionContact = "salam @ mercyofallah . com";
 
 export const sourceReferences = [
   {

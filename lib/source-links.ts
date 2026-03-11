@@ -42,7 +42,14 @@ function parseHadithLink(reference: string): string | null {
   return null;
 }
 
-export function buildSourceLinks(sourceReference: string): ParsedSourceLink[] {
+export function buildSourceLinks(
+  sourceReference: string,
+  sourceUrl?: string,
+): ParsedSourceLink[] {
+  if (sourceUrl && !sourceReference.includes(";")) {
+    return [{ label: sourceReference.trim(), href: sourceUrl }];
+  }
+
   return sourceReference.split(";").map((segment) => {
     const label = segment.trim();
 

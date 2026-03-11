@@ -39,8 +39,19 @@ export default function HomePage() {
       <HeroSection />
 
       <section className="-mt-8 rounded-[24px] border border-[var(--border-soft)] bg-[color-mix(in_srgb,var(--surface-tint)_78%,transparent)] px-5 py-3 text-center text-sm leading-7 text-[var(--muted)] sm:px-6">
-        This is a Sadaqah Jariah project built to spread beneficial remembrance,
-        reflection, and peace.
+        <span>
+          This is a Sadaqah Jariah project built to spread beneficial
+          remembrance, reflection, and peace.
+        </span>{" "}
+        <span className="font-medium text-[color:#a2382c]">
+          This site is currently in beta version, so if you experience some
+          issues or find minor errors, please bear with us and refer to the{" "}
+          <Link href="/disclaimer" className="underline underline-offset-4">
+            Disclaimer
+          </Link>
+          . This helps us give readers a better experience and correct any
+          mistakes.
+        </span>
       </section>
 
       <section className="space-y-6">

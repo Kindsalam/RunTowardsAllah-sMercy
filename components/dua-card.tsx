@@ -38,7 +38,7 @@ export function DuaCard({
     item.arabic,
     item.transliteration ? `Transliteration: ${item.transliteration}` : null,
     `English: ${item.english}`,
-    `Urdu: ${item.urdu}`,
+    item.urdu ? `Urdu: ${item.urdu}` : null,
     item.benefit ? `Why read this: ${item.benefit}` : null,
     `Source: ${item.sourceReference}`,
   ]
@@ -96,6 +96,7 @@ export function DuaCard({
             sourceReference={item.sourceReference}
             sourceType={item.sourceType}
             authenticity={item.authenticity}
+            sourceUrl={item.sourceUrl}
           />
         </div>
         <div className="flex flex-wrap gap-2">
@@ -131,23 +132,25 @@ export function DuaCard({
           </div>
         ) : null}
 
-        <div className="grid gap-4 lg:grid-cols-2">
+        <div className={`grid gap-4 ${item.urdu ? "lg:grid-cols-2" : ""}`}>
           <div className="rounded-[22px] border border-[var(--border-soft)] bg-[color-mix(in_srgb,var(--surface-tint)_72%,var(--background)_28%)] p-5">
             <p className="eyebrow mb-3">English</p>
             <p className="text-sm leading-7 text-[var(--foreground)] sm:text-base">
               {item.english}
             </p>
           </div>
-          <div className="rounded-[22px] border border-[var(--border-soft)] bg-[color-mix(in_srgb,var(--surface-tint)_72%,var(--background)_28%)] p-5">
-            <p className="eyebrow mb-3">Urdu</p>
-            <p
-              dir="rtl"
-              lang="ur"
-              className="urdu-text text-right text-base leading-8 text-[var(--foreground)]"
-            >
-              {item.urdu}
-            </p>
-          </div>
+          {item.urdu ? (
+            <div className="rounded-[22px] border border-[var(--border-soft)] bg-[color-mix(in_srgb,var(--surface-tint)_72%,var(--background)_28%)] p-5">
+              <p className="eyebrow mb-3">Urdu</p>
+              <p
+                dir="rtl"
+                lang="ur"
+                className="urdu-text text-right text-base leading-8 text-[var(--foreground)]"
+              >
+                {item.urdu}
+              </p>
+            </div>
+          ) : null}
         </div>
 
         {item.benefit ? (

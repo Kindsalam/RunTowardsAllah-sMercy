@@ -13,9 +13,10 @@ export type DuaItem = {
   arabic: string;
   transliteration?: string;
   english: string;
-  urdu: string;
+  urdu?: string;
   sourceType: "quran" | "hadith";
   sourceReference: string;
+  sourceUrl?: string;
   repetition?: string;
   authenticity?: "sahih" | "hasan" | "quran";
   featured?: boolean;

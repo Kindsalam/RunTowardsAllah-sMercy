@@ -63,18 +63,6 @@ export function Header() {
 
         <MobileNav links={siteLinks} featuredLinks={journeyLinks} />
       </div>
-      <div className="border-t border-[var(--border-soft)]/80 bg-[color-mix(in_srgb,var(--surface-tint)_70%,transparent)]">
-        <div className="page-shell py-2">
-          <Link
-            href="/adhkar#morning-bukhari-6306"
-            className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full px-3 py-1.5 text-center text-sm text-[var(--muted)] transition hover:bg-[var(--accent-green-soft)] hover:text-[var(--brand)]"
-          >
-            <span className="text-[var(--foreground)]">
-              Featured Dua: Sayyid Al-Istaghfar (Bukhari 6306)
-            </span>
-          </Link>
-        </div>
-      </div>
     </header>
   );
 }

@@ -15,7 +15,7 @@ const sections = [
   },
   {
     title: "Corrections",
-    body: "For corrections please contact: from abdul salam @ gmail . com",
+    body: "For corrections please contact: salam @ mercyofallah . com",
   },
 ];
 

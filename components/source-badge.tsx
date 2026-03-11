@@ -5,15 +5,16 @@ import type { DuaItem } from "@/lib/types";
 
 type SourceBadgeProps = Pick<
   DuaItem,
-  "sourceType" | "authenticity" | "sourceReference"
+  "sourceType" | "authenticity" | "sourceReference" | "sourceUrl"
 >;
 
 export function SourceBadge({
   sourceType,
   authenticity,
   sourceReference,
+  sourceUrl,
 }: SourceBadgeProps) {
-  const sourceLinks = buildSourceLinks(sourceReference);
+  const sourceLinks = buildSourceLinks(sourceReference, sourceUrl);
   const tone =
     sourceType === "quran"
       ? "bg-emerald-100 text-emerald-900 dark:bg-emerald-950/60 dark:text-emerald-100"

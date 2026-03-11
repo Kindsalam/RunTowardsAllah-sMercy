@@ -104,4 +104,24 @@ export const lastTenNights: DuaItem[] = [
     sourceReference: "Qur'an 25:74",
     authenticity: "quran",
   },
+  {
+    id: "last-ten-abu-dawud-3854",
+    category: "last-ten-nights",
+    title: "Dua for the one who hosted the iftar",
+    theme:
+      "A Sunnah dua to say for the host when you break your fast with them in Ramadan.",
+    benefit:
+      "This keeps gratitude alive in the nights of Ramadan and turns shared iftar into a moment of dua and barakah.",
+    arabic:
+      "أَفْطَرَ عِنْدَكُمُ الصَّائِمُونَ، وَأَكَلَ طَعَامَكُمُ الأَبْرَارُ، وَصَلَّتْ عَلَيْكُمُ الْمَلَائِكَةُ",
+    transliteration:
+      "Aftara ‘indakumu s-sa’imun, wa akala ta‘amakumu l-abrar, wa sallat ‘alaykumu l-mala’ikah",
+    english:
+      "May the fasting people break their fast with you, may the righteous eat your food, and may the angels pray for blessing upon you.",
+    sourceType: "hadith",
+    sourceReference: "Sunan Abi Dawud 3854",
+    sourceUrl: "https://sunnah.com/abudawud:3854",
+    repetition: "Read it when breaking the fast with a host or household.",
+    authenticity: "sahih",
+  },
 ];

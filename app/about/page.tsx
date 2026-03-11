@@ -45,6 +45,17 @@ export default function AboutPage() {
             and reflection, and help people remember Allah through authentic
             duas and adhkar.
           </p>
+          <p className="text-sm leading-7 text-[var(--muted)] sm:text-base">
+            The idea for this website had been in the making for many years.
+            Alhamdulillah, on Wednesday, March 11, 2026, Allah helped this
+            project begin properly, and subhan Allah helped the creator choose
+            this domain name as well.
+          </p>
+          <p className="text-sm leading-7 text-[var(--muted)] sm:text-base">
+            The prayer behind this work is that the reward of this website and
+            the duas on it may reach all the Muslimeen from Adam عليه السلام to
+            the last human being, in sha Allah. Ameen.
+          </p>
         </div>
       </section>
 

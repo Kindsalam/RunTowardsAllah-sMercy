@@ -25,6 +25,10 @@ export function DuaCard({
   const { showTransliteration } = useSiteSettings();
   const [copyLabel, setCopyLabel] = useState(copyButtonLabel);
   const [shareLabel, setShareLabel] = useState(shareButtonLabel);
+  const arabicClassName =
+    item.sourceType === "quran"
+      ? "arabic-quran reading-arabic-quran"
+      : "arabic-sacred reading-arabic-lg";
   const categoryLabel =
     item.category === "rabbana"
       ? "Qur’anic dua"
@@ -113,11 +117,11 @@ export function DuaCard({
       </div>
 
       <div className="mt-6 grid gap-5">
-        <div className="rounded-[26px] border border-[var(--border-soft)] bg-[linear-gradient(180deg,var(--panel-green),var(--panel-strong))] p-5 sm:p-6">
+        <div className="rounded-[26px] border border-[var(--border-soft)] bg-[linear-gradient(180deg,var(--panel-green),var(--panel-strong))] p-6 sm:p-7">
           <p
             dir="rtl"
             lang="ar"
-            className="arabic-sacred reading-arabic-lg text-right text-[var(--foreground)]"
+            className={`${arabicClassName} text-right text-[var(--foreground)]`}
           >
             {item.arabic}
           </p>

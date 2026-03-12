@@ -254,12 +254,12 @@ export default function LastTenNightsPage() {
             </p>
           </div>
 
-          <div className="rounded-[28px] border border-white/15 bg-white/10 p-5 shadow-[0_20px_70px_rgba(0,0,0,0.12)] backdrop-blur-md sm:p-6">
+          <div className="rounded-[28px] border border-white/15 bg-white/10 p-6 shadow-[0_20px_70px_rgba(0,0,0,0.12)] backdrop-blur-md sm:p-7">
             <div className="space-y-5">
               <p
                 dir="rtl"
                 lang="ar"
-                className="arabic-sacred reading-arabic-lg text-right text-white"
+                className="arabic-quran reading-arabic-quran text-right text-white"
               >
                 لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ
               </p>

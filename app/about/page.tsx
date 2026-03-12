@@ -118,7 +118,7 @@ export default function AboutPage() {
             <p
               dir="rtl"
               lang="ar"
-              className="arabic-sacred reading-arabic-lg text-right text-[var(--foreground)]"
+              className="arabic-quran reading-arabic-quran text-right text-[var(--foreground)]"
             >
               وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ
             </p>

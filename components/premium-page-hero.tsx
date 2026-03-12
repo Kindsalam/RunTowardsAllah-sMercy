@@ -64,7 +64,7 @@ export function PremiumHeroPanel({
     <div
       className={
         isDark
-          ? "rounded-[24px] border border-[var(--border-soft)] bg-[linear-gradient(160deg,rgba(8,20,15,0.96)_0%,rgba(16,46,36,0.94)_100%)] p-4 text-white shadow-[0_18px_60px_rgba(8,24,19,0.12)]"
+          ? "rounded-[24px] border border-[var(--border-soft)] bg-[linear-gradient(160deg,rgba(8,20,15,0.96)_0%,rgba(16,46,36,0.94)_100%)] p-5 text-white shadow-[0_18px_60px_rgba(8,24,19,0.12)] sm:p-6"
           : "rounded-[24px] border border-[var(--border-soft)] bg-[var(--surface)]/95 p-4 shadow-[0_18px_60px_rgba(8,24,19,0.06)]"
       }
     >

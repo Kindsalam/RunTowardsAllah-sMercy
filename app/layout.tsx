@@ -17,10 +17,10 @@ const notoNaskhArabic = Noto_Naskh_Arabic({
   variable: "--font-noto-naskh-arabic",
 });
 
-const indoPakQuran = localFont({
-  src: "./fonts/indopak-quran.ttf",
+const quranUthmanicHafs = localFont({
+  src: "./fonts/quran-uthmanic-hafs.woff2",
   display: "swap",
-  variable: "--font-indopak-quran",
+  variable: "--font-quran-uthmanic-hafs",
 });
 
 export const metadata: Metadata = {
@@ -61,7 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${notoNaskhArabic.variable} ${indoPakQuran.variable}`}
+        className={`${notoNaskhArabic.variable} ${quranUthmanicHafs.variable}`}
         suppressHydrationWarning
       >
         <SiteSettingsProvider>

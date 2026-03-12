@@ -26,6 +26,10 @@ export function HeroSection({ featuredItems }: HeroSectionProps) {
     useState<(typeof featuredItems)[number]["key"]>("laylatul-qadr");
   const activeDua =
     featuredItems.find((entry) => entry.key === activeKey) ?? featuredItems[0];
+  const activeArabicClassName =
+    activeDua.key === "rabbana" || activeDua.key === "reminder"
+      ? "arabic-quran reading-arabic-quran"
+      : "arabic-sacred reading-arabic-sm sm:reading-arabic-hero";
   const primarySource = buildSourceLinks(activeDua.item.sourceReference).find(
     (link) => link.href,
   );
@@ -81,7 +85,7 @@ export function HeroSection({ featuredItems }: HeroSectionProps) {
         <div className="relative lg:pl-2">
           <div className="absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,246,214,0.58)_0%,_rgba(255,246,214,0.12)_36%,_transparent_66%)] blur-xl" />
           <div className="relative mx-auto max-w-[23rem] rounded-[28px] border border-white/15 bg-white/10 p-3 shadow-[0_20px_70px_rgba(0,0,0,0.12)] backdrop-blur-md sm:p-3.5">
-            <div className="rounded-[24px] border border-white/12 bg-black/12 p-4 sm:p-[1.125rem]">
+            <div className="rounded-[24px] border border-white/12 bg-black/12 p-5 sm:p-6">
               <div className="space-y-3.5">
                 <div className="flex items-center justify-between gap-3">
                   <p className="eyebrow text-white/70">{activeDua.label}</p>
@@ -99,7 +103,7 @@ export function HeroSection({ featuredItems }: HeroSectionProps) {
                   <p
                     dir="rtl"
                     lang="ar"
-                    className="arabic-sacred reading-arabic-sm text-right text-white sm:reading-arabic-hero"
+                    className={`${activeArabicClassName} text-right text-white`}
                   >
                     {activeDua.item.arabic}
                   </p>

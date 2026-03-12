@@ -13,6 +13,7 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua for sincerity and acceptance, especially after worship, service, or any effort done for Allah.",
     arabic:
       "رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنْتَ السَّمِيعُ الْعَلِيمُ",
+    transliteration: "Rabbana taqabbal minna innaka anta s-Sami'u l-'Alim",
     english:
       "Our Lord, accept [this] from us. Indeed, You are the Hearing, the Knowing.",
     urdu:
@@ -31,6 +32,8 @@ export const rabbanaDuas: DuaItem[] = [
       "This dua asks Allah for sincere submission, righteous descendants, and guidance in worship.",
     arabic:
       "رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِنْ ذُرِّيَّتِنَا أُمَّةً مُسْلِمَةً لَكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا ۖ إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ",
+    transliteration:
+      "Rabbana waj'alna muslimayni laka wa min dhurriyyatina ummatan muslimatan laka wa arina manasikana wa tub 'alayna innaka anta t-Tawwabu r-Rahim",
     english:
       "Our Lord, make us Muslims in submission to You, and from our descendants a Muslim nation in submission to You. Show us our rites and accept our repentance. Indeed, You are the Accepting of repentance, the Merciful.",
     urdu:
@@ -50,7 +53,7 @@ export const rabbanaDuas: DuaItem[] = [
     arabic:
       "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
     transliteration:
-      "Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina ‘adhaban-nar",
+      "Rabbana atina fi d-dunya hasanatan wa fi l-akhirati hasanatan wa qina 'adhaba n-nar",
     english:
       "Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.",
     urdu:
@@ -71,7 +74,7 @@ export const rabbanaDuas: DuaItem[] = [
     arabic:
       "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
     transliteration:
-      "Rabbana afrigh alayna sabran wa thabbit aqdamana wansurna ala l-qawmi l-kafirin",
+      "Rabbana afrigh 'alayna sabran wa thabbit aqdamana wansurna 'ala l-qawmi l-kafirin",
     english:
       "Our Lord, pour upon us patience, make our steps firm, and grant us victory over the disbelieving people.",
     urdu:
@@ -90,6 +93,7 @@ export const rabbanaDuas: DuaItem[] = [
       "A prayer for Allah's pardon when human weakness, forgetfulness, or mistakes occur.",
     arabic:
       "رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا",
+    transliteration: "Rabbana la tu'akhidhna in nasina aw akhta'na",
     english:
       "Our Lord, do not impose blame upon us if we have forgotten or erred.",
     urdu:
@@ -108,6 +112,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A plea for relief from crushing burdens and from tests beyond what previous nations faced.",
     arabic:
       "رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا",
+    transliteration:
+      "Rabbana wa la tahmil 'alayna isran kama hamaltahu 'ala lladhina min qablina",
     english:
       "Our Lord, do not place upon us a burden like the one You placed upon those before us.",
     urdu:
@@ -126,6 +132,8 @@ export const rabbanaDuas: DuaItem[] = [
       "This gathers pardon, forgiveness, mercy, and divine help when life feels heavier than we can carry.",
     arabic:
       "رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+    transliteration:
+      "Rabbana wa la tuhammilna ma la taqata lana bih, wa'fu 'anna, waghfir lana, warhamna. Anta mawlana fansurna 'ala l-qawmi l-kafirin",
     english:
       "Our Lord, do not burden us with that which we have no ability to bear. Pardon us, forgive us, and have mercy upon us. You are our protector, so give us victory over the disbelieving people.",
     urdu:
@@ -145,7 +153,7 @@ export const rabbanaDuas: DuaItem[] = [
     arabic:
       "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ",
     transliteration:
-      "Rabbana la tuzigh qulubana ba‘da idh hadaytana wa hab lana min ladunka rahmah, innaka anta l-Wahhab",
+      "Rabbana la tuzigh qulubana ba'da idh hadaytana wa hab lana min ladunka rahmah. Innaka anta l-Wahhab",
     english:
       "Our Lord, do not let our hearts deviate after You have guided us. Grant us mercy from Yourself. Surely You are the Ever-Giving.",
     urdu:
@@ -164,6 +172,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A reminder to live with certainty in the Last Day and trust in Allah's promise.",
     arabic:
       "رَبَّنَا إِنَّكَ جَامِعُ النَّاسِ لِيَوْمٍ لَا رَيْبَ فِيهِ ۚ إِنَّ اللَّهَ لَا يُخْلِفُ الْمِيعَادَ",
+    transliteration:
+      "Rabbana innaka jami'u n-nasi li-yawmin la rayba fih. Inna llaha la yukhlifu l-mi'ad",
     english:
       "Our Lord, surely You will gather the people for a Day about which there is no doubt. Indeed, Allah does not fail in His promise.",
     urdu:
@@ -182,6 +192,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A concise dua combining faith, forgiveness, and protection from the Fire.",
     arabic:
       "رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ",
+    transliteration:
+      "Rabbana innana amanna faghfir lana dhunubana wa qina 'adhaba n-nar",
     english:
       "Our Lord, indeed we have believed, so forgive us our sins and protect us from the punishment of the Fire.",
     urdu:
@@ -200,6 +212,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua for truthful faith, following the messenger, and being counted among the people of truth.",
     arabic:
       "رَبَّنَا آمَنَّا بِمَا أَنْزَلْتَ وَاتَّبَعْنَا الرَّسُولَ فَاكْتُبْنَا مَعَ الشَّاهِدِينَ",
+    transliteration:
+      "Rabbana amanna bima anzalta wa ttaba'na r-rasula faktubna ma'a sh-shahidin",
     english:
       "Our Lord, we have believed in what You revealed and have followed the messenger, so register us among the witnesses.",
     urdu:
@@ -218,6 +232,8 @@ export const rabbanaDuas: DuaItem[] = [
       "This dua is for repentance, inner steadiness, and courage in hardship and opposition.",
     arabic:
       "رَبَّنَا اغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِي أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+    transliteration:
+      "Rabbana ghfir lana dhunubana wa israfana fi amrina wa thabbit aqdamana wansurna 'ala l-qawmi l-kafirin",
     english:
       "Our Lord, forgive us our sins and the excess committed in our affairs, make our feet firm, and give us victory over the disbelieving people.",
     urdu:
@@ -236,6 +252,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A reflective dua that turns contemplation of creation into humility, reverence, and fear of the Fire.",
     arabic:
       "رَبَّنَا مَا خَلَقْتَ هَٰذَا بَاطِلًا سُبْحَانَكَ فَقِنَا عَذَابَ النَّارِ",
+    transliteration:
+      "Rabbana ma khalaqta hadha batilan, subhanaka fa qina 'adhaba n-nar",
     english:
       "Our Lord, You did not create this aimlessly. Exalted are You above such a thing, so protect us from the punishment of the Fire.",
     urdu:
@@ -254,6 +272,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A stark reminder that salvation is Allah's mercy and protection from the Fire is among the greatest needs.",
     arabic:
       "رَبَّنَا إِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ أَخْزَيْتَهُ ۖ وَمَا لِلظَّالِمِينَ مِنْ أَنْصَارٍ",
+    transliteration:
+      "Rabbana innaka man tudkhili n-nara faqad akhzaytah, wa ma li-z-zalimina min ansar",
     english:
       "Our Lord, indeed whoever You admit to the Fire, You have disgraced him, and for the wrongdoers there are no helpers.",
     urdu:
@@ -272,6 +292,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua of grateful response to guidance, useful for renewing faith and obedience.",
     arabic:
       "رَبَّنَا إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِي لِلْإِيمَانِ أَنْ آمِنُوا بِرَبِّكُمْ فَآمَنَّا",
+    transliteration:
+      "Rabbana innana sami'na munadiyan yunadi lil-imani an aminu bi-rabbikum fa amanna",
     english:
       "Our Lord, indeed we have heard a caller calling to faith, saying: Believe in your Lord, and we have believed.",
     urdu:
@@ -290,6 +312,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua for forgiveness, purification from sins, and a righteous ending.",
     arabic:
       "رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الْأَبْرَارِ",
+    transliteration:
+      "Rabbana faghfir lana dhunubana wa kaffir 'anna sayyi'atina wa tawaffana ma'a l-abrar",
     english:
       "Our Lord, forgive us our sins, remove from us our misdeeds, and cause us to die with the righteous.",
     urdu:
@@ -308,6 +332,8 @@ export const rabbanaDuas: DuaItem[] = [
       "This keeps hope alive in Allah's promises and the honor of the Hereafter.",
     arabic:
       "رَبَّنَا وَآتِنَا مَا وَعَدْتَنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ الْقِيَامَةِ ۗ إِنَّكَ لَا تُخْلِفُ الْمِيعَادَ",
+    transliteration:
+      "Rabbana wa atina ma wa'adtana 'ala rusulika wa la tukhzina yawma l-qiyamah. Innaka la tukhlifu l-mi'ad",
     english:
       "Our Lord, grant us what You promised us through Your messengers and do not disgrace us on the Day of Resurrection. Indeed, You do not fail in Your promise.",
     urdu:
@@ -326,6 +352,7 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua for truthful acknowledgment of revelation and for being counted among its sincere witnesses.",
     arabic:
       "رَبَّنَا آمَنَّا فَاكْتُبْنَا مَعَ الشَّاهِدِينَ",
+    transliteration: "Rabbana amanna faktubna ma'a sh-shahidin",
     english:
       "Our Lord, we have believed, so register us among the witnesses.",
     urdu:
@@ -344,6 +371,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua asking Allah for provision, signs, and sustenance from Him alone.",
     arabic:
       "اللَّهُمَّ رَبَّنَا أَنْزِلْ عَلَيْنَا مَائِدَةً مِنَ السَّمَاءِ تَكُونُ لَنَا عِيدًا لِأَوَّلِنَا وَآخِرِنَا وَآيَةً مِنْكَ ۖ وَارْزُقْنَا وَأَنْتَ خَيْرُ الرَّازِقِينَ",
+    transliteration:
+      "Allahumma Rabbana anzil 'alayna ma'idatan mina s-sama'i takunu lana 'idan li-awwalina wa akhirina wa ayatan minka, warzuqna wa anta khayru r-raziqin",
     english:
       "O Allah, our Lord, send down to us a table spread with food from heaven to be for us a festival for the first of us and the last of us and a sign from You. Provide for us, and You are the best of providers.",
     urdu:
@@ -363,7 +392,7 @@ export const rabbanaDuas: DuaItem[] = [
     arabic:
       "رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ",
     transliteration:
-      "Rabbana zalamna anfusana wa il-lam taghfir lana wa tarhamna lanakunanna mina l-khasirin",
+      "Rabbana zalamna anfusana wa in lam taghfir lana wa tarhamna lanakunanna mina l-khasirin",
     english:
       "Our Lord, we have wronged ourselves. If You do not forgive us and have mercy on us, we will surely be among the losers.",
     urdu:
@@ -382,6 +411,7 @@ export const rabbanaDuas: DuaItem[] = [
       "A short protection dua asking Allah to keep us away from the people and path of wrongdoing.",
     arabic:
       "رَبَّنَا لَا تَجْعَلْنَا مَعَ الْقَوْمِ الظَّالِمِينَ",
+    transliteration: "Rabbana la taj'alna ma'a l-qawmi z-zalimin",
     english:
       "Our Lord, do not place us with the wrongdoing people.",
     urdu:
@@ -400,6 +430,8 @@ export const rabbanaDuas: DuaItem[] = [
       "This dua is for truth, justice, and reliance on Allah when facing conflict or pressure.",
     arabic:
       "رَبَّنَا افْتَحْ بَيْنَنَا وَبَيْنَ قَوْمِنَا بِالْحَقِّ وَأَنْتَ خَيْرُ الْفَاتِحِينَ",
+    transliteration:
+      "Rabbana iftah baynana wa bayna qawmina bi-l-haqqi wa anta khayru l-fatihin",
     english:
       "Our Lord, decide between us and our people in truth, and You are the best of those who give decision.",
     urdu:
@@ -418,6 +450,7 @@ export const rabbanaDuas: DuaItem[] = [
       "A prayer for endurance in trial and for a faithful ending upon Islam.",
     arabic:
       "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَتَوَفَّنَا مُسْلِمِينَ",
+    transliteration: "Rabbana afrigh 'alayna sabran wa tawaffana muslimin",
     english:
       "Our Lord, pour upon us patience and let us die as Muslims in submission to You.",
     urdu:
@@ -436,6 +469,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua for safety from oppression and for rescue by Allah's mercy.",
     arabic:
       "رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِلْقَوْمِ الظَّالِمِينَ ۝ وَنَجِّنَا بِرَحْمَتِكَ مِنَ الْقَوْمِ الْكَافِرِينَ",
+    transliteration:
+      "Rabbana la taj'alna fitnatan lil-qawmi z-zalimin. Wa najjina bi-rahmatika mina l-qawmi l-kafirin",
     english:
       "Our Lord, do not make us a trial for the wrongdoing people, and save us by Your mercy from the disbelieving people.",
     urdu:
@@ -454,6 +489,8 @@ export const rabbanaDuas: DuaItem[] = [
       "This keeps the heart honest before Allah, who knows what is hidden and what is shown.",
     arabic:
       "رَبَّنَا إِنَّكَ تَعْلَمُ مَا نُخْفِي وَمَا نُعْلِنُ ۗ وَمَا يَخْفَىٰ عَلَى اللَّهِ مِنْ شَيْءٍ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ",
+    transliteration:
+      "Rabbana innaka ta'lamu ma nukhfi wa ma nu'lin. Wa ma yakhfa 'ala llahi min shay'in fi l-ardi wa la fi s-sama'",
     english:
       "Our Lord, indeed You know what we conceal and what we declare, and nothing is hidden from Allah on the earth or in the heaven.",
     urdu:
@@ -472,6 +509,7 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua for prayer, righteous descendants, and acceptance of supplication.",
     arabic:
       "رَبَّنَا وَتَقَبَّلْ دُعَاءِ",
+    transliteration: "Rabbana wa taqabbal du'a'",
     english:
       "Our Lord, accept my supplication.",
     urdu:
@@ -490,6 +528,8 @@ export const rabbanaDuas: DuaItem[] = [
       "This dua widens the heart from personal forgiveness to parents and all believers.",
     arabic:
       "رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ",
+    transliteration:
+      "Rabbana ghfir li wa li-walidayya wa lil-mu'minina yawma yaqumu l-hisab",
     english:
       "Our Lord, forgive me, my parents, and the believers on the Day the account is established.",
     urdu:
@@ -508,6 +548,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A beautiful dua for young hearts and anyone seeking mercy and a clear path in difficult circumstances.",
     arabic:
       "رَبَّنَا آتِنَا مِنْ لَدُنْكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا",
+    transliteration:
+      "Rabbana atina min ladunka rahmatan wa hayyi' lana min amrina rashada",
     english:
       "Our Lord, grant us from Yourself mercy and prepare for us from our affair right guidance.",
     urdu:
@@ -526,6 +568,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua to read before difficult conversations, opposition, or situations that feel intimidating.",
     arabic:
       "رَبَّنَا إِنَّنَا نَخَافُ أَنْ يَفْرُطَ عَلَيْنَا أَوْ أَنْ يَطْغَىٰ",
+    transliteration:
+      "Rabbana innana nakhafu an yafruta 'alayna aw an yatgha",
     english:
       "Our Lord, indeed we are afraid that he will hasten against us or that he will transgress.",
     urdu:
@@ -544,6 +588,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A direct dua for forgiveness and mercy, with the heart turning to the Most Merciful.",
     arabic:
       "رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنْتَ خَيْرُ الرَّاحِمِينَ",
+    transliteration:
+      "Rabbana amanna faghfir lana warhamna wa anta khayru r-rahimin",
     english:
       "Our Lord, we have believed, so forgive us and have mercy upon us, and You are the best of the merciful.",
     urdu:
@@ -562,6 +608,8 @@ export const rabbanaDuas: DuaItem[] = [
       "This keeps fear of the Hereafter alive and asks Allah for safety from Hellfire.",
     arabic:
       "رَبَّنَا اصْرِفْ عَنَّا عَذَابَ جَهَنَّمَ ۖ إِنَّ عَذَابَهَا كَانَ غَرَامًا ۝ إِنَّهَا سَاءَتْ مُسْتَقَرًّا وَمُقَامًا",
+    transliteration:
+      "Rabbana srif 'anna 'adhaba jahannam. Inna 'adhabaha kana gharaman. Innaha sa'at mustaqarran wa muqama",
     english:
       "Our Lord, avert from us the punishment of Hell. Indeed, its punishment is ever adhering. Indeed, it is evil as a settlement and residence.",
     urdu:
@@ -581,7 +629,7 @@ export const rabbanaDuas: DuaItem[] = [
     arabic:
       "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
     transliteration:
-      "Rabbana hab lana min azwajina wa dhurriyyatina qurrata ayunin waj‘alna lil-muttaqina imama",
+      "Rabbana hab lana min azwajina wa dhurriyyatina qurrata a'yunin waj'alna lil-muttaqina imama",
     english:
       "Our Lord, grant us joy in our spouses and offspring, and make us an example for the righteous.",
     urdu:
@@ -600,6 +648,7 @@ export const rabbanaDuas: DuaItem[] = [
       "A short statement that fills the heart with gratitude and hope in Allah's forgiveness.",
     arabic:
       "إِنَّ رَبَّنَا لَغَفُورٌ شَكُورٌ",
+    transliteration: "Inna Rabbana la-Ghafurun Shakur",
     english:
       "Indeed, our Lord is Forgiving and Appreciative.",
     urdu:
@@ -618,6 +667,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A deeply hopeful dua asking Allah's vast mercy and knowledge to cover the repentant.",
     arabic:
       "رَبَّنَا وَسِعْتَ كُلَّ شَيْءٍ رَحْمَةً وَعِلْمًا فَاغْفِرْ لِلَّذِينَ تَابُوا وَاتَّبَعُوا سَبِيلَكَ وَقِهِمْ عَذَابَ الْجَحِيمِ",
+    transliteration:
+      "Rabbana wasi'ta kulla shay'in rahmatan wa 'ilman faghfir lilladhina tabu wa ttaba'u sabilaka wa qihim 'adhaba l-jahim",
     english:
       "Our Lord, You have encompassed all things in mercy and knowledge, so forgive those who have repented and followed Your way, and protect them from the punishment of Hellfire.",
     urdu:
@@ -636,6 +687,8 @@ export const rabbanaDuas: DuaItem[] = [
       "This dua asks for entry into Jannah together with righteous family and protection from evil consequences.",
     arabic:
       "رَبَّنَا وَأَدْخِلْهُمْ جَنَّاتِ عَدْنٍ الَّتِي وَعَدْتَهُمْ وَمَنْ صَلَحَ مِنْ آبَائِهِمْ وَأَزْوَاجِهِمْ وَذُرِّيَّاتِهِمْ ۚ إِنَّكَ أَنْتَ الْعَزِيزُ الْحَكِيمُ ۝ وَقِهِمُ السَّيِّئَاتِ ۚ وَمَنْ تَقِ السَّيِّئَاتِ يَوْمَئِذٍ فَقَدْ رَحِمْتَهُ ۚ وَذَٰلِكَ هُوَ الْفَوْزُ الْعَظِيمُ",
+    transliteration:
+      "Rabbana wa adkhilhum jannati 'adnin allati wa'adtahum wa man salaha min aba'ihim wa azwajihim wa dhurriyyatihim, innaka anta l-'Azizu l-Hakim. Wa qihimu s-sayyi'at, wa man taqi s-sayyi'ati yawma'idhin faqad rahimtah, wa dhalika huwa l-fawzu l-'azim",
     english:
       "Our Lord, admit them to gardens of perpetual residence which You have promised them, and whoever was righteous among their fathers, their spouses, and their offspring. Indeed, You are the Exalted in Might, the Wise. Protect them from the evil consequences of their deeds, and whoever You protect from evil consequences that Day, You will have given him mercy. That is the great attainment.",
     urdu:
@@ -654,6 +707,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua that teaches love for believers, forgiveness for earlier Muslims, and purity of heart.",
     arabic:
       "رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَانِ",
+    transliteration:
+      "Rabbana ghfir lana wa li-ikhwanina alladhina sabaquna bi-l-iman",
     english:
       "Our Lord, forgive us and our brothers who preceded us in faith.",
     urdu:
@@ -672,6 +727,8 @@ export const rabbanaDuas: DuaItem[] = [
       "This is a powerful dua for cleansing the heart from resentment and keeping brotherhood sound.",
     arabic:
       "وَلَا تَجْعَلْ فِي قُلُوبِنَا غِلًّا لِلَّذِينَ آمَنُوا رَبَّنَا إِنَّكَ رَءُوفٌ رَحِيمٌ",
+    transliteration:
+      "Wa la taj'al fi qulubina ghillan lilladhina amanu. Rabbana innaka ra'ufun rahim",
     english:
       "Do not place in our hearts any resentment toward those who have believed. Our Lord, indeed You are Kind and Merciful.",
     urdu:
@@ -690,6 +747,7 @@ export const rabbanaDuas: DuaItem[] = [
       "A brief and steadying formula of tawakkul, repentance, and return to Allah.",
     arabic:
       "رَبَّنَا عَلَيْكَ تَوَكَّلْنَا وَإِلَيْكَ أَنَبْنَا وَإِلَيْكَ الْمَصِيرُ",
+    transliteration: "Rabbana 'alayka tawakkalna wa ilayka anabna wa ilayka l-masir",
     english:
       "Our Lord, upon You we have relied, and to You we have returned, and to You is the destination.",
     urdu:
@@ -708,6 +766,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua asking Allah for protection from humiliation, misguidance, and the harm of hostile people.",
     arabic:
       "رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِلَّذِينَ كَفَرُوا وَاغْفِرْ لَنَا رَبَّنَا ۖ إِنَّكَ أَنْتَ الْعَزِيزُ الْحَكِيمُ",
+    transliteration:
+      "Rabbana la taj'alna fitnatan lilladhina kafaru wa ghfir lana Rabbana innaka anta l-'Azizu l-Hakim",
     english:
       "Our Lord, do not make us a trial for the disbelievers and forgive us, our Lord. Indeed, You are the Exalted in Might, the Wise.",
     urdu:
@@ -726,6 +786,8 @@ export const rabbanaDuas: DuaItem[] = [
       "A dua for sincere repentance, complete light on the Day of Resurrection, and Allah's forgiveness.",
     arabic:
       "رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+    transliteration:
+      "Rabbana atmim lana nurana wa ghfir lana innaka 'ala kulli shay'in qadir",
     english:
       "Our Lord, perfect for us our light and forgive us. Indeed, You are over all things competent.",
     urdu:

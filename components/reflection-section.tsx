@@ -17,7 +17,7 @@ export function ReflectionSection() {
             <p
               dir="rtl"
               lang="ar"
-              className="arabic-text reading-arabic-md text-right text-[var(--foreground)]"
+              className="arabic-sacred reading-arabic-md text-right text-[var(--foreground)]"
             >
               وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ
             </p>

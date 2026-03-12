@@ -30,7 +30,7 @@ export function SectionDirectoryPage({
   const secondaryLink = relatedLinks[0];
 
   return (
-    <div className="page-shell space-y-12 py-6 pb-16 sm:space-y-16 sm:py-8">
+    <div className="page-shell space-y-10 pb-16 pt-1 sm:space-y-14 sm:pt-2">
       <PremiumPageHero
         eyebrow={eyebrow}
         title={title}
@@ -55,7 +55,7 @@ export function SectionDirectoryPage({
               eyebrow="Included here"
               title="Sections to keep close"
               items={cards.map((card) => card.title)}
-              description="Start with the sections you return to most often, then build consistency around them."
+              description="Start with the sections you return to most often."
             />
             <PremiumHeroPanel
               eyebrow="How to begin"
@@ -73,8 +73,8 @@ export function SectionDirectoryPage({
         ))}
       </section>
 
-      <section className="rounded-[32px] border border-[var(--border-soft)] bg-[var(--surface)] px-5 py-8 shadow-[0_20px_80px_rgba(8,24,19,0.07)] sm:px-8">
-        <div className="max-w-3xl space-y-4">
+      <section className="rounded-[32px] border border-[var(--border-soft)] bg-[var(--surface)] px-5 py-6 shadow-[0_20px_80px_rgba(8,24,19,0.07)] sm:px-8">
+        <div className="max-w-3xl space-y-3">
           <p className="eyebrow">How to use this section</p>
           <h2 className="font-display text-3xl leading-tight text-[var(--foreground)] sm:text-4xl">
             {guidanceTitle}

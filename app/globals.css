@@ -17,7 +17,8 @@
   --dua-scale: 1;
   --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
   --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  --font-arabic: "Noto Naskh Arabic", "Amiri", "Geeza Pro", serif;
+  --font-arabic: "Geeza Pro", "Noto Naskh Arabic", "Amiri", serif;
+  --font-arabic-sacred: var(--font-noto-naskh-arabic), "Amiri", "Scheherazade New", "Geeza Pro", serif;
 }
 
 .dark {
@@ -124,22 +125,22 @@ button {
 
   .reading-arabic-sm {
     font-size: calc(1.85rem * var(--reading-scale));
-    line-height: 1.95;
+    line-height: 2.12;
   }
 
   .reading-arabic-md {
     font-size: calc(1.95rem * var(--reading-scale));
-    line-height: 1.9;
+    line-height: 2.08;
   }
 
   .reading-arabic-lg {
     font-size: calc(2rem * var(--reading-scale));
-    line-height: 1.95;
+    line-height: 2.1;
   }
 
   .reading-arabic-hero {
     font-size: calc(1.9rem * var(--reading-scale));
-    line-height: 1.85;
+    line-height: 2;
   }
 
   @media (min-width: 640px) {
@@ -165,6 +166,20 @@ button {
     direction: rtl;
     unicode-bidi: isolate;
     text-wrap: pretty;
+  }
+
+  .arabic-sacred {
+    font-family: var(--font-arabic-sacred), serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-wrap: pretty;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    font-feature-settings: "rlig" 1, "calt" 1, "kern" 1;
+    font-variant-ligatures: common-ligatures contextual;
+    letter-spacing: 0;
+    word-spacing: 0.04em;
+    font-synthesis: none;
   }
 
   .urdu-text {

@@ -101,7 +101,7 @@ export function DailyAdhkarPage({
               eyebrow={previewLabel}
               tone="dark"
             >
-              <p className="arabic-text reading-arabic-sm text-right text-white">
+              <p className="arabic-sacred reading-arabic-sm text-right text-white">
                 {heroPreviewArabic}
               </p>
               <p className="reading-copy text-white/86">{heroPreviewText}</p>

@@ -89,7 +89,7 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="page-shell space-y-16 py-6 pb-16 sm:space-y-20 sm:py-8">
+    <div className="page-shell space-y-16 pb-16 pt-1 sm:space-y-20 sm:pt-2">
       <HeroSection featuredItems={featuredHeroItems} />
 
       <section className="reading-copy -mt-8 rounded-[24px] border border-[var(--border-soft)] bg-[color-mix(in_srgb,var(--surface-tint)_78%,transparent)] px-5 py-3 text-center text-[var(--muted)] sm:px-6">

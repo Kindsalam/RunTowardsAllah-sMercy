@@ -23,11 +23,11 @@ export function EveningAdhkarPage() {
       items={publicEveningAdhkar}
       heroLabel="Daily remembrance"
       heroTitle="Evening Adhkar"
-      heroParagraph="Close your day with remembrance, protection, gratitude, and reflection. Read evening adhkar in Arabic with full harakat, with English and Urdu translation, in a calm and simple layout designed for phone reading."
+      heroParagraph="Close the day with remembrance, protection, gratitude, and reflection."
       heroPreviewArabic="أَمْسَيْنَا عَلَى فِطْرَةِ الْإِسْلَامِ، وَعَلَى كَلِمَةِ الْإِخْلَاصِ"
       heroPreviewText="Let the final words of the day return the heart to calm, gratitude, and trust."
       introTitle="End the day with remembrance"
-      introParagraph="Every day carries effort, mistakes, success, and worry. Ending the evening with remembrance helps the heart return to calm, gratitude, and reliance upon Allah."
+      introParagraph="Ending the evening with remembrance helps the heart return to calm, gratitude, and reliance upon Allah."
       introSupportingLine="Let the final words of your day be words of remembrance."
       benefitCards={benefitCards}
       listTitle="Evening words to keep close"

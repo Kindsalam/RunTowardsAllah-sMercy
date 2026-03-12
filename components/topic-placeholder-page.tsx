@@ -28,7 +28,7 @@ export function TopicPlaceholderPage({
   const secondaryCard = relatedCards[1];
 
   return (
-    <div className="page-shell space-y-12 py-6 pb-16 sm:space-y-16 sm:py-8">
+    <div className="page-shell space-y-10 pb-16 pt-1 sm:space-y-14 sm:pt-2">
       <PremiumPageHero
         eyebrow={eyebrow}
         title={title}
@@ -52,7 +52,7 @@ export function TopicPlaceholderPage({
             <PremiumHeroPanel
               eyebrow="Coming soon"
               title="Prepared carefully, not rushed"
-              description="This section is being expanded with the same calm structure, visible references, and lightweight reading flow used elsewhere on the site."
+              description="This section is being added carefully with the same calm reading flow used across the site."
             />
             <PremiumHeroPanel
               eyebrow="While this page is prepared"
@@ -64,8 +64,8 @@ export function TopicPlaceholderPage({
         }
       />
 
-      <section className="rounded-[32px] border border-[var(--border-soft)] bg-[var(--surface)] px-5 py-8 shadow-[0_20px_80px_rgba(8,24,19,0.07)] sm:px-8">
-        <div className="max-w-3xl space-y-4">
+      <section className="rounded-[32px] border border-[var(--border-soft)] bg-[var(--surface)] px-5 py-6 shadow-[0_20px_80px_rgba(8,24,19,0.07)] sm:px-8">
+        <div className="max-w-3xl space-y-3">
           <p className="eyebrow">Coming soon</p>
           <h2 className="font-display text-3xl leading-tight text-[var(--foreground)] sm:text-4xl">
             {introTitle}

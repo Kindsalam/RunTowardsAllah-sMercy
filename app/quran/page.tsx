@@ -14,10 +14,10 @@ export default function QuranPage() {
     <SectionDirectoryPage
       eyebrow="Qur’an"
       title="Qur’anic content arranged for reflection and return"
-      description="Use this section to move through the Qur’anic content on the site. Rabbana duas are live now, and the other thematic ayat sections are prepared to grow carefully over time."
+      description="Move through the Qur’anic content on the site, beginning with Rabbana duas and the thematic ayat sections being prepared."
       cards={quranCategoryCards}
       guidanceTitle="Keep the Qur’an section focused and easy to revisit"
-      guidanceText="The aim is not volume for its own sake. The aim is to gather clear sections people can return to often without losing the calm, readable structure already in place."
+      guidanceText="The aim is not volume for its own sake, but clear sections people can return to often."
       relatedLinks={[
         { href: "/last-ten-nights", label: "Last 10 Nights" },
         { href: "/adhkar", label: "Adhkar" },

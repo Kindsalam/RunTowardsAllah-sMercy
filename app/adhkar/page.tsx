@@ -14,10 +14,10 @@ export default function AdhkarRoute() {
     <SectionDirectoryPage
       eyebrow="Adhkar"
       title="Daily remembrance organised by moment and need"
-      description="Use this section to move between the main categories of daily remembrance. Start with the times you return to most often, then keep the others close as the collection grows."
+      description="Move between the main categories of daily remembrance and keep the ones you return to most often close."
       cards={adhkarCategoryCards}
       guidanceTitle="Build consistency around a few sections first"
-      guidanceText="Morning and evening remembrance are usually the best place to begin. The other categories are being prepared carefully so the structure can grow without disrupting the reading experience."
+      guidanceText="Start with morning and evening remembrance, then add the others as the collection grows."
       relatedLinks={[
         { href: "/last-ten-nights", label: "Last 10 Nights" },
         { href: "/quran/rabbana-duas", label: "Rabbana Duas" },

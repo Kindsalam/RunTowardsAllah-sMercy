@@ -32,7 +32,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About this project"
         title="A long-term Sadaqah Jariah project"
-        description="This website exists to help people remember Allah, read reviewed Qur’anic duas and hadith-based adhkar, reflect on the guidance of the Qur’an and Sunnah, and keep benefiting from beneficial knowledge over time."
+        description="This website exists to help people remember Allah through reviewed duas, adhkar, and reflection."
         aside={
           <div className="reading-copy border-l-2 border-[var(--border-soft)] pl-5 text-[var(--foreground)]">
             Created by Salam Khan as a Sadaqah Jariah initiative so people can
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <p
               dir="rtl"
               lang="ar"
-              className="arabic-text reading-arabic-sm text-right text-[var(--foreground)]"
+              className="arabic-sacred reading-arabic-sm text-right text-[var(--foreground)]"
             >
               إِذَا مَاتَ ابْنُ آدَمَ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ:
               صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ
@@ -118,7 +118,7 @@ export default function AboutPage() {
             <p
               dir="rtl"
               lang="ar"
-              className="arabic-text reading-arabic-lg text-right text-[var(--foreground)]"
+              className="arabic-sacred reading-arabic-lg text-right text-[var(--foreground)]"
             >
               وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ
             </p>

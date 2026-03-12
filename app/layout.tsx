@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Noto_Naskh_Arabic } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { Footer } from "@/components/footer";
@@ -7,6 +8,13 @@ import { SiteSettingsProvider } from "@/components/site-settings-provider";
 import { defaultDescription, siteName, siteUrl } from "@/lib/seo";
 
 import "./globals.css";
+
+const notoNaskhArabic = Noto_Naskh_Arabic({
+  subsets: ["arabic"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-noto-naskh-arabic",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -45,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className={notoNaskhArabic.variable} suppressHydrationWarning>
         <SiteSettingsProvider>
           <div className="flex min-h-screen flex-col">
             <Header />

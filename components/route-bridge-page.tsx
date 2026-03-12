@@ -27,7 +27,7 @@ export function RouteBridgePage({
   secondaryLabel,
 }: RouteBridgePageProps) {
   return (
-    <div className="page-shell space-y-12 py-6 pb-16 sm:space-y-16 sm:py-8">
+    <div className="page-shell space-y-10 pb-16 pt-1 sm:space-y-14 sm:pt-2">
       <PremiumPageHero
         eyebrow={eyebrow}
         title={title}
@@ -52,7 +52,7 @@ export function RouteBridgePage({
             <PremiumHeroPanel
               eyebrow="Route safety"
               title="Existing links still work"
-              description="This URL remains available, but the main reading path now sits inside the newer section structure."
+              description="This URL still works, but the main reading path now sits inside the newer section structure."
               tone="dark"
             />
           </>

@@ -117,7 +117,7 @@ export function DuaCard({
           <p
             dir="rtl"
             lang="ar"
-            className="arabic-text reading-arabic-lg text-right text-[var(--foreground)]"
+            className="arabic-sacred reading-arabic-lg text-right text-[var(--foreground)]"
           >
             {item.arabic}
           </p>

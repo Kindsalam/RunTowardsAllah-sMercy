@@ -23,11 +23,11 @@ export function MorningAdhkarPage() {
       items={publicMorningAdhkar}
       heroLabel="Daily remembrance"
       heroTitle="Morning Adhkar"
-      heroParagraph="Begin your day with remembrance, protection, gratitude, and trust in Allah. Read morning adhkar in Arabic with full harakat, along with English and Urdu translation, in a calm and easy mobile-friendly layout."
+      heroParagraph="Begin the day with remembrance, protection, gratitude, and trust in Allah."
       heroPreviewArabic="أَصْبَحْنَا عَلَى فِطْرَةِ الْإِسْلَامِ، وَعَلَى كَلِمَةِ الْإِخْلَاصِ"
       heroPreviewText="Let the first words of the day draw the heart back to gratitude, reliance, and calm."
       introTitle="Start the day with what benefits the heart"
-      introParagraph="The morning is the start of your day, your work, your plans, and your worries. Beginning it with remembrance of Allah brings protection, steadiness, gratitude, and peace. Even a few sincere moments each morning can shape the rest of the day."
+      introParagraph="Beginning the day with remembrance brings protection, steadiness, gratitude, and peace."
       introSupportingLine="Read a little with consistency rather than rushing through a lot without presence."
       benefitCards={benefitCards}
       listTitle="Morning words to keep close"

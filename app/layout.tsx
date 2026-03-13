@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Noto_Naskh_Arabic } from "next/font/google";
-import localFont from "next/font/local";
 import type { ReactNode } from "react";
 
 import { Footer } from "@/components/footer";
@@ -14,13 +13,9 @@ const notoNaskhArabic = Noto_Naskh_Arabic({
   subsets: ["arabic"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
+  preload: true,
+  fallback: ["Amiri", "serif"],
   variable: "--font-noto-naskh-arabic",
-});
-
-const quranUthmanicHafs = localFont({
-  src: "./fonts/quran-uthmanic-hafs.woff2",
-  display: "swap",
-  variable: "--font-quran-uthmanic-hafs",
 });
 
 export const metadata: Metadata = {
@@ -60,10 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${notoNaskhArabic.variable} ${quranUthmanicHafs.variable}`}
-        suppressHydrationWarning
-      >
+      <body className={notoNaskhArabic.variable} suppressHydrationWarning>
         <SiteSettingsProvider>
           <div className="flex min-h-screen flex-col">
             <Header />

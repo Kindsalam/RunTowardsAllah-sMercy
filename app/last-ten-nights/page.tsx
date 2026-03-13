@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { CopyDuaButton } from "@/components/copy-dua-button";
 import { DuaCard } from "@/components/dua-card";
+import { SacredArabicText } from "@/components/sacred-arabic-text";
 import { publicLastTenNights } from "@/lib/public-content";
 import type { DuaItem } from "@/lib/types";
 
@@ -252,13 +253,9 @@ export default function LastTenNightsPage() {
 
           <div className="rounded-[28px] border border-[var(--border-soft)] bg-[var(--surface)] p-6 shadow-[0_18px_44px_rgba(15,23,42,0.05)] sm:p-7">
             <div className="space-y-5">
-              <p
-                dir="rtl"
-                lang="ar"
-                className="arabic-quran reading-arabic-quran text-right text-[var(--foreground)]"
-              >
+              <SacredArabicText size="quran" className="text-[var(--foreground)]">
                 لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ
-              </p>
+              </SacredArabicText>
               <div className="border-t border-[var(--border-soft)] pt-4">
                 <Link
                   href="https://quran.com/97/3"

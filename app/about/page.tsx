@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CategoryCard } from "@/components/category-card";
 import { CorrectionNote } from "@/components/correction-note";
 import { PageHero } from "@/components/page-hero";
+import { SacredArabicText } from "@/components/sacred-arabic-text";
 import { aboutSectionCards } from "@/lib/content";
 import { createMetadata } from "@/lib/seo";
 
@@ -78,15 +79,11 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="border-s-2 border-[var(--border-soft)] bg-[var(--surface)] px-5 py-4 sm:px-6">
-            <p
-              dir="rtl"
-              lang="ar"
-              className="arabic-sacred reading-arabic-sm text-right text-[var(--foreground)]"
-            >
+            <SacredArabicText size="sm" className="text-[var(--foreground)]">
               إِذَا مَاتَ ابْنُ آدَمَ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ:
               صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ
               يَدْعُو لَهُ
-            </p>
+            </SacredArabicText>
           </div>
           <div className="grid gap-4 lg:grid-cols-[1fr_auto] lg:items-end">
             <p className="reading-copy text-[var(--foreground)]">
@@ -115,13 +112,9 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="border-s-2 border-[var(--border-soft)] bg-[var(--surface)] px-5 py-4 sm:px-6">
-            <p
-              dir="rtl"
-              lang="ar"
-              className="arabic-quran reading-arabic-quran text-right text-[var(--foreground)]"
-            >
+            <SacredArabicText size="quran" className="text-[var(--foreground)]">
               وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ
-            </p>
+            </SacredArabicText>
           </div>
           <div className="grid gap-4 lg:grid-cols-[1fr_auto] lg:items-end">
             <p className="reading-copy text-[var(--foreground)]">

@@ -26,8 +26,9 @@
   --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
   --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --font-arabic: "Geeza Pro", "Noto Naskh Arabic", "Amiri", serif;
-  --font-arabic-sacred: var(--font-noto-naskh-arabic), "Amiri", "Scheherazade New", "Geeza Pro", serif;
-  --font-arabic-quran: var(--font-quran-uthmanic-hafs), var(--font-noto-naskh-arabic), "Amiri", serif;
+  --font-arabic-display: var(--font-noto-naskh-arabic), "Noto Naskh Arabic", "Amiri", "Scheherazade New", "Geeza Pro", serif;
+  --font-arabic-sacred: var(--font-arabic-display);
+  --font-arabic-quran: var(--font-arabic-display);
 }
 
 .dark {
@@ -70,6 +71,8 @@ html[data-font-scale="lg"] {
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -196,29 +199,34 @@ button {
     line-height: 2;
   }
 
-  .reading-arabic-sm {
+  .reading-arabic-sm,
+  .sacred-arabic-size-sm {
     font-size: calc(1.92rem * var(--reading-scale));
+    line-height: 2.28;
+  }
+
+  .reading-arabic-md,
+  .sacred-arabic-size-md {
+    font-size: calc(2.02rem * var(--reading-scale));
     line-height: 2.24;
   }
 
-  .reading-arabic-md {
-    font-size: calc(2.02rem * var(--reading-scale));
-    line-height: 2.2;
-  }
-
-  .reading-arabic-lg {
+  .reading-arabic-lg,
+  .sacred-arabic-size-lg {
     font-size: calc(2.12rem * var(--reading-scale));
-    line-height: 2.18;
+    line-height: 2.22;
   }
 
-  .reading-arabic-hero {
+  .reading-arabic-hero,
+  .sacred-arabic-size-hero {
     font-size: calc(1.98rem * var(--reading-scale));
-    line-height: 2.18;
+    line-height: 2.22;
   }
 
-  .reading-arabic-quran {
-    font-size: calc(2.18rem * var(--reading-scale));
-    line-height: 2.04;
+  .reading-arabic-quran,
+  .sacred-arabic-size-quran {
+    font-size: calc(2.08rem * var(--reading-scale));
+    line-height: 2.24;
   }
 
   @media (min-width: 640px) {
@@ -234,12 +242,15 @@ button {
       font-size: calc(1.08rem * var(--reading-scale));
     }
 
-    .reading-arabic-hero {
+    .reading-arabic-hero,
+    .sacred-arabic-size-hero {
       font-size: calc(2.24rem * var(--reading-scale));
     }
 
-    .reading-arabic-quran {
-      font-size: calc(2.44rem * var(--reading-scale));
+    .reading-arabic-quran,
+    .sacred-arabic-size-quran {
+      font-size: calc(2.38rem * var(--reading-scale));
+      line-height: 2.16;
     }
   }
 
@@ -250,32 +261,25 @@ button {
     text-wrap: pretty;
   }
 
-  .arabic-sacred {
+  .arabic-sacred,
+  .arabic-quran,
+  .sacred-arabic {
     font-family: var(--font-arabic-sacred), serif;
     direction: rtl;
     unicode-bidi: isolate;
     text-wrap: pretty;
     text-rendering: optimizeLegibility;
-    font-kerning: normal;
-    font-feature-settings: "rlig" 1, "calt" 1, "liga" 1, "ccmp" 1, "mark" 1, "mkmk" 1, "kern" 1;
-    font-variant-ligatures: common-ligatures contextual discretionary-ligatures;
-    letter-spacing: 0;
-    word-spacing: 0.04em;
-    font-synthesis: none;
-  }
-
-  .arabic-quran {
-    font-family: var(--font-arabic-quran), serif;
-    direction: rtl;
-    unicode-bidi: isolate;
-    text-wrap: pretty;
-    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-kerning: normal;
     font-feature-settings: "rlig" 1, "calt" 1, "liga" 1, "ccmp" 1, "mark" 1, "mkmk" 1, "kern" 1;
     font-variant-ligatures: common-ligatures contextual discretionary-ligatures;
     letter-spacing: 0;
     word-spacing: 0.02em;
     font-synthesis: none;
+    font-synthesis-weight: none;
+    font-synthesis-style: none;
+    font-weight: 400;
   }
 
   .urdu-text {

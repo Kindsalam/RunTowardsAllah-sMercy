@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
+import { SacredArabicText } from "@/components/sacred-arabic-text";
 import { buildSourceLinks } from "@/lib/source-links";
 type HeroFeature = {
   key: "rabbana" | "morning" | "laylatul-qadr" | "reminder";
@@ -26,10 +27,10 @@ export function HeroSection({ featuredItems }: HeroSectionProps) {
     useState<(typeof featuredItems)[number]["key"]>("laylatul-qadr");
   const activeDua =
     featuredItems.find((entry) => entry.key === activeKey) ?? featuredItems[0];
-  const activeArabicClassName =
+  const activeArabicSize =
     activeDua.key === "rabbana" || activeDua.key === "reminder"
-      ? "arabic-quran reading-arabic-quran"
-      : "arabic-sacred reading-arabic-sm sm:reading-arabic-hero";
+      ? "quran"
+      : "hero";
   const primarySource = buildSourceLinks(activeDua.item.sourceReference).find(
     (link) => link.href,
   );
@@ -80,13 +81,12 @@ export function HeroSection({ featuredItems }: HeroSectionProps) {
                   <h2 className="text-lg font-medium leading-snug text-[var(--foreground)] sm:text-[1.35rem]">
                     {activeDua.item.title}
                   </h2>
-                  <p
-                    dir="rtl"
-                    lang="ar"
-                    className={`${activeArabicClassName} text-right text-[var(--foreground)]`}
+                  <SacredArabicText
+                    size={activeArabicSize}
+                    className="text-[var(--foreground)]"
                   >
                     {activeDua.item.arabic}
-                  </p>
+                  </SacredArabicText>
                   <p className="reading-copy max-w-[33ch] text-[var(--muted)]">
                     {activeDua.item.english}
                   </p>

@@ -1,3 +1,5 @@
+import { SacredArabicText } from "@/components/sacred-arabic-text";
+
 export function ReflectionSection() {
   return (
     <section className="rounded-[32px] border border-[var(--border-soft)] bg-[var(--surface)] px-5 py-8 shadow-[0_20px_56px_rgba(15,23,42,0.05)] sm:px-8 lg:px-10">
@@ -13,13 +15,9 @@ export function ReflectionSection() {
         </div>
         <div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="highlight-card rounded-[28px] p-5 sm:p-7">
-            <p
-              dir="rtl"
-              lang="ar"
-              className="arabic-quran reading-arabic-quran text-right text-[var(--foreground)]"
-            >
+            <SacredArabicText size="quran" className="text-[var(--foreground)]">
               وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ
-            </p>
+            </SacredArabicText>
           </div>
           <div className="grid gap-4">
             <div className="rounded-[24px] border border-[var(--border-soft)] bg-[var(--background)] p-5">

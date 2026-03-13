@@ -5,6 +5,7 @@ import {
   PremiumHeroPanel,
   PremiumPageHero,
 } from "@/components/premium-page-hero";
+import { SacredArabicText } from "@/components/sacred-arabic-text";
 import type { DuaItem } from "@/lib/types";
 
 type BenefitCard = {
@@ -101,9 +102,9 @@ export function DailyAdhkarPage({
               eyebrow={previewLabel}
               tone="dark"
             >
-              <p className="arabic-sacred reading-arabic-sm text-right text-[var(--foreground)]">
+              <SacredArabicText size="sm" className="text-[var(--foreground)]">
                 {heroPreviewArabic}
-              </p>
+              </SacredArabicText>
               <p className="reading-copy text-[var(--muted)]">{heroPreviewText}</p>
             </PremiumHeroPanel>
           </>

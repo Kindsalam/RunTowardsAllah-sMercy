@@ -1,5 +1,14 @@
 import type { JourneyLink, NavLink } from "@/lib/types";
 
+export const rabbanaDuasCard: JourneyLink = {
+  href: "/quran/rabbana-duas",
+  title: "Rabbana Duas",
+  eyebrow: "Qur’anic supplications",
+  description:
+    "Read the Rabbana duas taught in the Qur’an for guidance, mercy, forgiveness, patience, and success.",
+  buttonLabel: "Open Rabbana Duas",
+};
+
 export const journeyLinks: JourneyLink[] = [
   {
     href: "/last-ten-nights",
@@ -10,11 +19,9 @@ export const journeyLinks: JourneyLink[] = [
     buttonLabel: "Begin with these nights",
   },
   {
-    href: "/quran/rabbana-duas",
+    ...rabbanaDuasCard,
     title: "Qur’anic Rabbana Duas",
     eyebrow: "From the Qur'an",
-    description:
-      "Read the powerful supplications that Allah placed in His Book for guidance, mercy, forgiveness, and success.",
     buttonLabel: "Read Rabbana Duas",
   },
   {
@@ -48,15 +55,14 @@ export const siteLinks: NavLink[] = [
     children: [
       { href: "/adhkar/morning", label: "Morning" },
       { href: "/adhkar/evening", label: "Evening" },
-      { href: "/adhkar/sleep", label: "Sleep" },
-      { href: "/adhkar/protection", label: "Protection" },
-      { href: "/adhkar/travel", label: "Travel" },
     ],
   },
   {
     href: "/duas",
     label: "Duas",
+    aliases: ["/quran/rabbana-duas", "/rabbana-duas"],
     children: [
+      { href: "/quran/rabbana-duas", label: "Rabbana Duas" },
       { href: "/duas/prophetic", label: "Prophetic Duas" },
       { href: "/duas/shifa", label: "Shifa" },
       { href: "/duas/forgiveness", label: "Forgiveness" },
@@ -67,23 +73,11 @@ export const siteLinks: NavLink[] = [
     ],
   },
   {
-    href: "/quran",
-    label: "Qur’an",
-    aliases: ["/rabbana-duas"],
-    children: [
-      { href: "/quran/rabbana-duas", label: "Rabbana Duas" },
-      { href: "/quran/ayat-of-mercy", label: "Ayat of Mercy" },
-      { href: "/quran/ayat-of-forgiveness", label: "Ayat of Forgiveness" },
-      { href: "/quran/ayat-of-guidance", label: "Ayat of Guidance" },
-    ],
-  },
-  {
     href: "/about",
     label: "About",
     aliases: ["/sources", "/methodology", "/disclaimer", "/privacy-policy", "/terms-of-use", "/cookie-policy"],
     children: [
       { href: "/sources", label: "Sources" },
-      { href: "/methodology", label: "Methodology" },
       { href: "/disclaimer", label: "Disclaimer" },
     ],
   },
@@ -99,7 +93,6 @@ export const legalLinks = [
 export const aboutLinks = [
   { href: "/about", label: "About" },
   { href: "/sources", label: "Sources" },
-  { href: "/methodology", label: "Methodology" },
   { href: "/disclaimer", label: "Disclaimer" },
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/terms-of-use", label: "Terms of Use" },
@@ -123,33 +116,10 @@ export const adhkarCategoryCards: JourneyLink[] = [
       "End the day with protection, reflection, and calm remembrance before the night settles.",
     buttonLabel: "Open Evening Adhkar",
   },
-  {
-    href: "/adhkar/sleep",
-    title: "Sleep Adhkar",
-    eyebrow: "Before rest",
-    description:
-      "A dedicated section for bedtime remembrance and the words to keep close before sleep.",
-    buttonLabel: "Explore Sleep Adhkar",
-  },
-  {
-    href: "/adhkar/protection",
-    title: "Protection Adhkar",
-    eyebrow: "Safety and well-being",
-    description:
-      "A place for adhkar of protection, refuge, and well-being through the day and night.",
-    buttonLabel: "Explore Protection Adhkar",
-  },
-  {
-    href: "/adhkar/travel",
-    title: "Travel Adhkar",
-    eyebrow: "Journeys and movement",
-    description:
-      "Keep travel remembrance close for departures, transitions, and safe return, in sha Allah.",
-    buttonLabel: "Explore Travel Adhkar",
-  },
 ];
 
 export const duaCategoryCards: JourneyLink[] = [
+  rabbanaDuasCard,
   {
     href: "/duas/prophetic",
     title: "Prophetic Duas",
@@ -208,41 +178,6 @@ export const duaCategoryCards: JourneyLink[] = [
   },
 ];
 
-export const quranCategoryCards: JourneyLink[] = [
-  {
-    href: "/quran/rabbana-duas",
-    title: "Rabbana Duas",
-    eyebrow: "Qur’anic supplications",
-    description:
-      "Read the Rabbana duas taught in the Qur’an for guidance, mercy, forgiveness, patience, and success.",
-    buttonLabel: "Open Rabbana Duas",
-  },
-  {
-    href: "/quran/ayat-of-mercy",
-    title: "Ayat of Mercy",
-    eyebrow: "Rahmah and hope",
-    description:
-      "A section being prepared for Qur’anic verses that call the heart toward Allah’s mercy and hope.",
-    buttonLabel: "Open Ayat of Mercy",
-  },
-  {
-    href: "/quran/ayat-of-forgiveness",
-    title: "Ayat of Forgiveness",
-    eyebrow: "Maghfirah and return",
-    description:
-      "A dedicated place for verses that strengthen repentance, forgiveness, and return to Allah.",
-    buttonLabel: "Open Ayat of Forgiveness",
-  },
-  {
-    href: "/quran/ayat-of-guidance",
-    title: "Ayat of Guidance",
-    eyebrow: "Light and direction",
-    description:
-      "A section for Qur’anic verses that steady the heart with guidance, clarity, and purpose.",
-    buttonLabel: "Open Ayat of Guidance",
-  },
-];
-
 export const aboutSectionCards: JourneyLink[] = [
   {
     href: "/about",
@@ -259,14 +194,6 @@ export const aboutSectionCards: JourneyLink[] = [
     description:
       "See how Qur’an and hadith references are shown, reviewed, and kept visible across the site.",
     buttonLabel: "Open Sources",
-  },
-  {
-    href: "/methodology",
-    title: "Methodology",
-    eyebrow: "How content is handled",
-    description:
-      "Understand the principles used for content selection, source visibility, and correction handling.",
-    buttonLabel: "Open Methodology",
   },
   {
     href: "/disclaimer",

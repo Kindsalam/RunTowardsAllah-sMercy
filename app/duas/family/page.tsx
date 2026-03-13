@@ -1,6 +1,6 @@
 import { TopicalDuasPage } from "@/components/topical-duas-page";
 import { familyDuas } from "@/data/topical-duas";
-import { quranCategoryCards, duaCategoryCards } from "@/lib/content";
+import { adhkarCategoryCards, duaCategoryCards, rabbanaDuasCard } from "@/lib/content";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
@@ -20,9 +20,9 @@ export default function FamilyDuasPage() {
       introText="These duas gather a Qur'anic prayer for family joy, a prophetic protection dua for children, and a prophetic supplication for barakah, forgiveness, and mercy in what Allah provides."
       items={familyDuas}
       relatedCards={[
-        quranCategoryCards[0],
-        duaCategoryCards[6],
-        quranCategoryCards[1],
+        rabbanaDuasCard,
+        duaCategoryCards[7],
+        adhkarCategoryCards[0],
       ]}
     />
   );

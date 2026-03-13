@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Duas",
   description:
-    "Explore dua categories including prophetic duas, shifa, forgiveness, rizq, family, travel, and daily life in a scalable section structure.",
+    "Explore dua categories including Rabbana duas, prophetic duas, shifa, forgiveness, rizq, family, travel, and daily life in a scalable section structure.",
   path: "/duas",
 });
 
@@ -19,7 +19,7 @@ export default function DuasPage() {
       guidanceTitle="Grow the collection without losing clarity"
       guidanceText="Each category is being prepared separately so the collection can grow without losing clarity."
       relatedLinks={[
-        { href: "/quran/rabbana-duas", label: "Qur’anic Rabbana Duas" },
+        { href: "/last-ten-nights", label: "Last 10 Nights" },
         { href: "/adhkar", label: "Adhkar" },
         { href: "/sources", label: "Sources" },
       ]}

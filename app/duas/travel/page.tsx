@@ -20,9 +20,9 @@ export default function TravelDuasPage() {
       introText="These duas keep journeys connected to tawhid, piety, ease, protection, and thankful return. They are useful for departure, for stopping at a place, and for the return home."
       items={travelDuas}
       relatedCards={[
-        adhkarCategoryCards[4],
         adhkarCategoryCards[0],
-        duaCategoryCards[6],
+        adhkarCategoryCards[1],
+        duaCategoryCards[7],
       ]}
     />
   );

@@ -1,6 +1,6 @@
 import { TopicalDuasPage } from "@/components/topical-duas-page";
 import { rizqDuas } from "@/data/topical-duas";
-import { quranCategoryCards, duaCategoryCards } from "@/lib/content";
+import { duaCategoryCards, rabbanaDuasCard } from "@/lib/content";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
@@ -20,9 +20,9 @@ export default function RizqDuasPage() {
       introText="These duas ask for more than money alone. They ask for wholesome provision, accepted deeds, protection from haram, and lasting goodness in this life and the next."
       items={rizqDuas}
       relatedCards={[
-        quranCategoryCards[0],
-        duaCategoryCards[6],
-        duaCategoryCards[4],
+        rabbanaDuasCard,
+        duaCategoryCards[7],
+        duaCategoryCards[5],
       ]}
     />
   );

@@ -8,6 +8,8 @@ const sizeClasses = {
   quran: "sacred-arabic-size-quran",
 } as const;
 
+const quranAnnotationPattern = /[\u06DF\u06E0\u06E2\u06ED]/;
+
 type SacredArabicSize = keyof typeof sizeClasses;
 
 type SacredArabicTextProps<T extends ElementType> = {
@@ -17,6 +19,18 @@ type SacredArabicTextProps<T extends ElementType> = {
   size?: SacredArabicSize;
 } & Omit<ComponentPropsWithoutRef<T>, "as" | "children" | "className" | "dir" | "lang">;
 
+function extractTextContent(children: ReactNode): string {
+  if (typeof children === "string" || typeof children === "number") {
+    return String(children);
+  }
+
+  if (Array.isArray(children)) {
+    return children.map(extractTextContent).join("");
+  }
+
+  return "";
+}
+
 export function SacredArabicText<T extends ElementType = "p">({
   as,
   children,
@@ -25,13 +39,15 @@ export function SacredArabicText<T extends ElementType = "p">({
   ...rest
 }: SacredArabicTextProps<T>) {
   const Component = as ?? "p";
+  const hasAnnotationGlyphs = quranAnnotationPattern.test(extractTextContent(children));
+  const annotationClass = hasAnnotationGlyphs ? "sacred-arabic-annotation-safe" : "";
 
   return (
     <Component
       dir="rtl"
       lang="ar"
       translate="no"
-      className={`sacred-arabic ${sizeClasses[size]} text-right ${className}`.trim()}
+      className={`sacred-arabic ${annotationClass} ${sizeClasses[size]} text-right ${className}`.trim()}
       {...rest}
     >
       {children}

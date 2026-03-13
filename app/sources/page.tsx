@@ -74,6 +74,21 @@ const trustPrinciples = [
   "Keep room for careful review and correction",
 ];
 
+const methodologyPoints = [
+  {
+    title: "Qur’an and authentic Sunnah",
+    text: "The aim of the site is to stay close to the Qur’an and authentic Sunnah, while adding material carefully and section by section.",
+  },
+  {
+    title: "References remain visible",
+    text: "Wherever possible, the source stays visible directly on the page so readers can see what comes from the Qur’an and what comes from hadith.",
+  },
+  {
+    title: "Corrections are welcome",
+    text: "Religious content deserves humility and review. If something needs correction, the site should remain easy to improve without breaking the wider structure.",
+  },
+];
+
 export default function SourcesPage() {
   return (
     <div className="page-shell space-y-12 py-6 pb-16 sm:space-y-16 sm:py-8">
@@ -228,6 +243,37 @@ export default function SourcesPage() {
 
       <section className="space-y-6 border-t border-[var(--border-soft)] pt-6">
         <div className="max-w-3xl space-y-3">
+          <p className="eyebrow">How content is handled</p>
+          <h2 className="font-display text-3xl text-[var(--foreground)] sm:text-4xl">
+            Method principles folded into the same review page
+          </h2>
+          <p className="reading-copy text-[var(--muted)]">
+            The site should grow carefully, keep references visible, and remain
+            easy to correct when something needs review. These principles are
+            now kept here with the wider sources page so the trust guidance
+            lives in one place.
+          </p>
+        </div>
+        <div className="grid gap-4 lg:grid-cols-3">
+          {methodologyPoints.map((point) => (
+            <article
+              key={point.title}
+              className="rounded-[26px] border border-[var(--border-soft)] bg-[var(--surface)] p-5 shadow-[0_18px_60px_rgba(8,24,19,0.06)]"
+            >
+              <p className="eyebrow mb-3">Method principle</p>
+              <h2 className="text-xl font-semibold text-[var(--foreground)]">
+                {point.title}
+              </h2>
+              <p className="reading-copy mt-3 text-[var(--muted)]">
+                {point.text}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="space-y-6 border-t border-[var(--border-soft)] pt-6">
+        <div className="max-w-3xl space-y-3">
           <p className="eyebrow">Reference examples</p>
           <h2 className="font-display text-3xl text-[var(--foreground)] sm:text-4xl">
             Examples from the current public set
@@ -258,11 +304,11 @@ export default function SourcesPage() {
         <div className="max-w-3xl space-y-3">
           <p className="eyebrow">About section links</p>
           <h2 className="font-display text-3xl text-[var(--foreground)] sm:text-4xl">
-            Read the wider trust, method, and policy pages
+            Read the wider trust and policy pages
           </h2>
           <p className="reading-copy text-[var(--muted)]">
-            Use these pages to understand the project, its sources, its
-            methodology, and the practical policies around verification and use.
+            Use these pages to understand the project, its sources, and the
+            practical policies around verification and use.
           </p>
         </div>
         <div className="grid gap-4 lg:grid-cols-2 xl:grid-cols-3">

@@ -1,6 +1,6 @@
 import { TopicalDuasPage } from "@/components/topical-duas-page";
 import { propheticQuranDuas } from "@/data/prophetic-quran-duas";
-import { duaCategoryCards, quranCategoryCards } from "@/lib/content";
+import { duaCategoryCards, rabbanaDuasCard } from "@/lib/content";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
@@ -33,9 +33,9 @@ export default function PropheticDuasPage() {
         "Clickable Quran.com references",
       ]}
       relatedCards={[
-        quranCategoryCards[0],
-        duaCategoryCards[1],
+        rabbanaDuasCard,
         duaCategoryCards[2],
+        duaCategoryCards[3],
       ]}
     />
   );

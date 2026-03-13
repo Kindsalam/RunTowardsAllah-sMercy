@@ -1,6 +1,6 @@
 import { TopicalDuasPage } from "@/components/topical-duas-page";
 import { forgivenessDuas } from "@/data/topical-duas";
-import { quranCategoryCards } from "@/lib/content";
+import { duaCategoryCards, rabbanaDuasCard } from "@/lib/content";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
@@ -20,9 +20,9 @@ export default function ForgivenessDuasPage() {
       introText="These duas gather Qur'anic forgiveness, Sayyid al-Istighfar, and a short prophetic istighfar that can be repeated often. Keep them close in moments of tawbah and whenever the heart needs to return."
       items={forgivenessDuas}
       relatedCards={[
-        quranCategoryCards[0],
-        quranCategoryCards[2],
-        quranCategoryCards[1],
+        rabbanaDuasCard,
+        duaCategoryCards[1],
+        duaCategoryCards[7],
       ]}
     />
   );

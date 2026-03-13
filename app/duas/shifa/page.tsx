@@ -1,6 +1,6 @@
 import { TopicalDuasPage } from "@/components/topical-duas-page";
 import { shifaDuas } from "@/data/topical-duas";
-import { adhkarCategoryCards, quranCategoryCards } from "@/lib/content";
+import { adhkarCategoryCards, rabbanaDuasCard } from "@/lib/content";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
@@ -20,8 +20,8 @@ export default function ShifaDuasPage() {
       introText="These duas gather a Qur'anic call from Prophet Ayyub and Prophetic words of ruqyah and refuge. Read them with certainty that healing and relief are in Allah's hand alone."
       items={shifaDuas}
       relatedCards={[
-        adhkarCategoryCards[3],
-        quranCategoryCards[0],
+        adhkarCategoryCards[0],
+        rabbanaDuasCard,
         adhkarCategoryCards[1],
       ]}
     />

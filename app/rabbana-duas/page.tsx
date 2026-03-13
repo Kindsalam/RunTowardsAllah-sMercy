@@ -4,7 +4,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Rabbana Duas",
   description:
-    "Rabbana Duas now lives inside the Qur'an section of the site.",
+    "Rabbana Duas now lives under the Duas section of the site.",
   path: "/rabbana-duas",
   canonicalPath: "/quran/rabbana-duas",
   noIndex: true,
@@ -13,14 +13,14 @@ export const metadata = createMetadata({
 export default function RabbanaDuasBridgeRoute() {
   return (
     <RouteBridgePage
-      eyebrow="Qur’an"
-      title="Rabbana duas now lives inside the Qur’an section"
-      description="The Rabbana collection is still available. It now sits under the Qur’an section so the site structure can grow more clearly."
-      supportingText="Existing links still work here, but the main destination is now the Qur’an route for Rabbana duas."
+      eyebrow="Duas"
+      title="Rabbana duas now sits under Duas"
+      description="The Rabbana collection is still available on its current page. It is now grouped under Duas so the navigation stays simpler."
+      supportingText="Existing links still work here, but the main destination is now the Rabbana page surfaced inside the Duas section."
       primaryHref="/quran/rabbana-duas"
       primaryLabel="Open Rabbana Duas"
-      secondaryHref="/quran"
-      secondaryLabel="Open Qur’an"
+      secondaryHref="/duas"
+      secondaryLabel="Open Duas"
     />
   );
 }

@@ -182,11 +182,11 @@ export default function AboutPage() {
         <div className="max-w-3xl space-y-3">
           <p className="eyebrow">About section links</p>
           <h2 className="font-display text-3xl text-[var(--foreground)] sm:text-4xl">
-            Read the trust, method, and policy pages
+            Read the trust and policy pages
           </h2>
           <p className="reading-copy text-[var(--muted)]">
-            Use these pages to understand the project, its sources, its
-            methodology, and the practical policies around verification and use.
+            Use these pages to understand the project, its sources, and the
+            practical policies around verification and use.
           </p>
         </div>
         <div className="grid gap-4 lg:grid-cols-2 xl:grid-cols-3">

@@ -1,6 +1,6 @@
 import { TopicalDuasPage } from "@/components/topical-duas-page";
 import { dailyLifeDuas } from "@/data/topical-duas";
-import { adhkarCategoryCards, quranCategoryCards } from "@/lib/content";
+import { adhkarCategoryCards, rabbanaDuasCard } from "@/lib/content";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
@@ -22,7 +22,7 @@ export default function DailyLifeDuasPage() {
       relatedCards={[
         adhkarCategoryCards[0],
         adhkarCategoryCards[1],
-        quranCategoryCards[0],
+        rabbanaDuasCard,
       ]}
     />
   );

@@ -29,6 +29,7 @@
   --font-arabic-display: var(--font-noto-naskh-arabic), "Noto Naskh Arabic", "Amiri", "Scheherazade New", "Geeza Pro", serif;
   --font-arabic-sacred: var(--font-arabic-display);
   --font-arabic-quran: var(--font-arabic-display);
+  --font-arabic-annotation-safe: "Geeza Pro", "Amiri", "Scheherazade New", var(--font-noto-naskh-arabic), "Noto Naskh Arabic", serif;
 }
 
 .dark {
@@ -280,6 +281,10 @@ button {
     font-synthesis-weight: none;
     font-synthesis-style: none;
     font-weight: 400;
+  }
+
+  .sacred-arabic-annotation-safe {
+    font-family: var(--font-arabic-annotation-safe), serif;
   }
 
   .urdu-text {
